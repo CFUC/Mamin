@@ -1,0 +1,19 @@
+.section {
+  width: 100%;
+  padding: 148px 283px;
+  background: rgba(58, 132, 196, 1);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.serviceContainer {
+  margin-top: 108px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  column-gap: 208px;
+  row-gap: 119px;
+}
