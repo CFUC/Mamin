@@ -1,0 +1,41 @@
+.section {
+  width: 100%;
+  padding: 14.8rem 0;
+  background: rgba(58, 132, 196, 1);
+}
+
+.inner {
+  width: 100%;
+  max-width: 149rem;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.serviceContainer {
+  margin-top: 10.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  column-gap: 20.8rem;
+  row-gap: 11.9rem;
+}
+
+@media (max-width: 1200px) {
+  .inner {
+    padding: 0 6rem;
+  }
+
+  .serviceContainer {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media (max-width: 680px) {
+  .serviceContainer {
+    column-gap: 7rem;
+  }
+}

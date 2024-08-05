@@ -32,3 +32,15 @@ html {
     font-size: 40%;
   }
 }
+
+@media (max-width: 1490px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 40%;
+  }
+}
