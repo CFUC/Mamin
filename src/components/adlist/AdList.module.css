@@ -1,0 +1,9 @@
+.adList {
+  padding: 100px 140px;
+}
+
+.adElement {
+  width: 200px;
+  filter: grayscale();
+  opacity: 0.5;
+}
