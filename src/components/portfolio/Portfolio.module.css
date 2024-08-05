@@ -1,0 +1,17 @@
+.section {
+  width: 100%;
+  padding: 148px 280px;
+  background: white;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.portfolioContainer {
+  margin-top: 173px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 67px;
+}
