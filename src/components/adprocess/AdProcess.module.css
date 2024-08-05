@@ -1,0 +1,17 @@
+.section {
+  width: 100%;
+  padding: 148px 283px;
+  background: white;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.processContainer {
+  margin-top: 108px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 63px;
+}
