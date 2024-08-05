@@ -3,13 +3,6 @@
   src: url("../public/fonts/Pretendard.ttf") format("truetype");
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Pretendard";
-}
-
 html {
   font-size: 62.5%;
 }
@@ -19,18 +12,6 @@ html {
   padding: 0;
   box-sizing: border-box;
   font-family: "Pretendard";
-}
-
-@media (max-width: 1490px) {
-  html {
-    font-size: 50%;
-  }
-}
-
-@media (max-width: 1200px) {
-  html {
-    font-size: 40%;
-  }
 }
 
 @media (max-width: 1490px) {

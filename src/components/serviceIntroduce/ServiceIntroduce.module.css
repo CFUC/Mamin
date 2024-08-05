@@ -29,12 +29,20 @@
     padding: 0 6rem;
   }
 
+  .title {
+    font-size: 6rem;
+  }
+
   .serviceContainer {
     grid-template-columns: repeat(2, auto);
   }
 }
 
 @media (max-width: 680px) {
+  .title {
+    font-size: 4rem;
+  }
+
   .serviceContainer {
     column-gap: 7rem;
   }
