@@ -10,6 +10,9 @@
 
 .adList {
   padding: 10rem 0;
+}
+
+.adList > div {
   transition-timing-function: linear;
 }
 

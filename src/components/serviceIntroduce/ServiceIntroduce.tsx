@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import ServiceElement from "./ServiceElement";
 import styles from "./ServiceIntroduce.module.css";
 
@@ -58,7 +59,6 @@ const ServiceIntroduce = () => {
               icon={service.icon}
               title={service.title}
               content={service.content}
-              index={service.id}
             />
           ))}
         </div>
