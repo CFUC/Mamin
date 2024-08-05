@@ -40,6 +40,7 @@ const AdProcess = () => {
               key={service.id}
               icon={service.icon}
               title={service.title}
+              index={service.id}
             />
           ))}
         </div>

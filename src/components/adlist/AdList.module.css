@@ -10,6 +10,7 @@
 
 .adList {
   padding: 10rem 0;
+  transition-timing-function: linear;
 }
 
 .adElement {
