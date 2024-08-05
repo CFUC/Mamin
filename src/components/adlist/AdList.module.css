@@ -19,6 +19,10 @@
 }
 
 @media (max-width: 670px) {
+  .adList {
+    padding: 0 0;
+  }
+
   .adElement {
     width: 18rem;
   }
@@ -32,6 +36,6 @@
 
 @media (max-width: 400px) {
   .adElement {
-    width: 13rem;
+    width: 10rem;
   }
 }
