@@ -58,6 +58,7 @@ const ServiceIntroduce = () => {
               icon={service.icon}
               title={service.title}
               content={service.content}
+              index={service.id}
             />
           ))}
         </div>

@@ -48,17 +48,22 @@ const AdList = () => {
         <Swiper
           className={styles.adList}
           slidesPerView={7}
-          // loop={true}
-          // modules={[Autoplay]}
-          // autoplay={{
-          //   delay: 0,
-          //   disableOnInteraction: false,
-          // }}
-          // speed={10000}
+          loop={true}
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          speed={10000}
         >
           {adData.map((ad) => (
-            <SwiperSlide>
-              <img src={ad.image} className={styles.adElement} />
+            <SwiperSlide key={ad.id}>
+              <img src={ad.image} alt={ad.title} className={styles.adElement} />
+            </SwiperSlide>
+          ))}
+          {adData.map((ad) => (
+            <SwiperSlide key={ad.id}>
+              <img src={ad.image} alt={ad.title} className={styles.adElement} />
             </SwiperSlide>
           ))}
         </Swiper>
