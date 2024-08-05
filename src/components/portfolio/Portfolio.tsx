@@ -22,7 +22,9 @@ const portfolioData = [
 
 const Portfolio = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section}
+  id="4"
+    >
       <div className={styles.inner}>
         <div className={styles.title}>마케팅 민족 포트폴리오</div>
         <div className={styles.portfolioContainer}>
