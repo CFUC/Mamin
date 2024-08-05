@@ -1,0 +1,47 @@
+.main{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 10px;
+    display: flex;
+    justify-content: space-around;
+    z-index: 9999;
+}
+
+
+.logo{
+    width: 10%;
+    height: 30%;
+    background-image: url('../../../public/images/마케팅\ 민족.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.logoBlack{
+    width: 10%;
+    height: 30%;
+    background-image: url('../../../public/images/마케팅\ 민족black.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.listContainer{
+    width: 20%;
+    display: flex;
+}
+
+.listContainer a{
+    display: block;
+    margin-left: 5%;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.listContainer a label{
+    white-space: nowrap;
+    cursor: pointer;
+}
