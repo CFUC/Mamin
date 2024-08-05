@@ -1,0 +1,50 @@
+.container{
+    width: 100%;
+    height: 125vh;
+    padding-top: 5vh;
+}
+
+.itemContainer{
+    width: 60%;
+    height: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flexContainer{
+    width: 90%;
+    display: flex;
+}
+
+.item {
+    width: 30%; 
+    aspect-ratio: 0.8/1;
+    margin: 50px auto;
+    padding: 1rem;
+    color: #FFF;
+    box-sizing: border-box;
+    background: url('https://s3-alpha-sig.figma.com/img/33e2/8c9b/9270a023b544c3824744bb9e7b4efd6d?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b0LM1LMIt32nIyR1ON69F5tXgTbWRvZCrvT6HjlhByFIVPXepA2p5upa2xCAhgtqmzqE2IIAFZ8M7yxyo3WOzrHfixS4O9iSPQetXeHRGIc32siyLP6wNedzNAlLkOdR6SUjxvqdAeSzIyK3GblHYnBfWKwGucuDURc3cdo24rmOhJsMOsbj9N64ODIr~7M5iggyKphgFbsetdOH6aq2x~pgGFktGsIxqKFMKpMeHSYE5zH5AQE1S8dZOfNf3qYpcZLF1SBtyrUSlkmSp9gPXq2PVHykjsZ42Igl2BsyYe3Sqp0ruDe6~f-9JpEAxDbobqKDvoGSYmXPTUzgSR0xMQ__');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.positionUp{
+    position: relative;
+    bottom: 30px;
+}
+  
+.positionDown{
+    position: relative;
+    top: 30px;
+}
+
+.title{
+    font-size: 4rem;
+    font-weight: 600;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
