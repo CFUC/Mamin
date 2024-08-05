@@ -49,16 +49,18 @@ const serviceData = [
 const ServiceIntroduce = () => {
   return (
     <section className={styles.section}>
-      <div className={styles.title}>마케팅 민족 서비스 소개</div>
-      <div className={styles.serviceContainer}>
-        {serviceData.map((service) => (
-          <ServiceElement
-            key={service.id}
-            icon={service.icon}
-            title={service.title}
-            content={service.content}
-          />
-        ))}
+      <div className={styles.inner}>
+        <div className={styles.title}>마케팅 민족 서비스 소개</div>
+        <div className={styles.serviceContainer}>
+          {serviceData.map((service) => (
+            <ServiceElement
+              key={service.id}
+              icon={service.icon}
+              title={service.title}
+              content={service.content}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

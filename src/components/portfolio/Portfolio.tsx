@@ -22,15 +22,15 @@ const portfolioData = [
 
 const Portfolio = () => {
   return (
-    <section>
-      <section className={styles.section}>
+    <section className={styles.section}>
+      <div className={styles.inner}>
         <div className={styles.title}>마케팅 민족 포트폴리오</div>
         <div className={styles.portfolioContainer}>
           {portfolioData.map((portfolio) => (
             <PortfolioElement key={portfolio.id} image={portfolio.image} />
           ))}
         </div>
-      </section>
+      </div>
     </section>
   );
 };

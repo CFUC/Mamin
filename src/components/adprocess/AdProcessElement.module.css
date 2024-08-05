@@ -13,7 +13,7 @@
   justify-content: center;
   overflow: hidden;
   border-radius: 50%;
-  border: 1px solid rgba(58, 132, 196, 1);
+  border: 0.1rem solid rgba(58, 132, 196, 1);
 }
 
 .icon {
@@ -22,8 +22,8 @@
 }
 
 .title {
-  margin-top: 33px;
+  margin-top: 3.3rem;
   white-space: pre-wrap;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 500;
 }

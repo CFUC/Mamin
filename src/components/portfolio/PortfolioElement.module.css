@@ -1,5 +1,12 @@
 .container {
-  height: 495px;
+  height: 49.5rem;
   background-color: #dddddd;
-  border-radius: 30px;
+  border-radius: 3rem;
+}
+
+@media (max-width: 950px) {
+  .container {
+    aspect-ratio: 1 / 1;
+    height: auto;
+  }
 }

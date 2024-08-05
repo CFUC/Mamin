@@ -32,15 +32,17 @@ const adProcessData = [
 const AdProcess = () => {
   return (
     <section className={styles.section}>
-      <div className={styles.title}>마케팅 민족 광고절차</div>
-      <div className={styles.processContainer}>
-        {adProcessData.map((service) => (
-          <AdProcessElement
-            key={service.id}
-            icon={service.icon}
-            title={service.title}
-          />
-        ))}
+      <div className={styles.inner}>
+        <div className={styles.title}>마케팅 민족 광고절차</div>
+        <div className={styles.processContainer}>
+          {adProcessData.map((service) => (
+            <AdProcessElement
+              key={service.id}
+              icon={service.icon}
+              title={service.title}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );

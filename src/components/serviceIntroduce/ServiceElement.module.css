@@ -1,20 +1,53 @@
 .icon {
-  width: 52px;
-  height: 53px;
+  width: 5.2rem;
+  height: 5.3rem;
 }
 
 .title {
   color: white;
-  margin-top: 15px;
+  margin-top: 1.5rem;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .content {
   color: white;
   font-weight: 300;
-  font-size: 16px;
-  margin-top: 36px;
+  font-size: 1.6rem;
+  margin-top: 3.6rem;
   white-space: pre-wrap;
-  line-height: 24px;
+  line-height: 2.4rem;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .content {
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .content {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .content {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
 }
