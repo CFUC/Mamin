@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import styles from "./AdList.module.css";
+import { Autoplay } from "swiper/modules";
 
 const adData = [
   {
