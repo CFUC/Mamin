@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    padding-top: 6vh;
+    padding: 6vh 0;
 }
 
 .itemContainer{
@@ -66,6 +66,9 @@
 
 
 @media screen and (max-width: 900px) {
+    .container{
+        height: 100vh;
+    }
     .itemContainer{
         width: 100%;
     }
@@ -73,7 +76,7 @@
         width: 90%;
     }
     .item{
-        padding-top: 4rem;
+        padding-top: 5rem;
         margin: 30px auto;
     }
 }
@@ -84,7 +87,4 @@
         font-size: 1.7rem;
     }
 
-    .item{
-        aspect-ratio: 0.7/1;
-    }
 }
