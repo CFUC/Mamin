@@ -70,3 +70,43 @@
   font-size: 1.6rem;
   font-weight: 500;
 }
+
+@media screen and (max-width: 1230px) {
+  .mainWrap {
+    font-size: 30%;
+  }
+
+  .companyText {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentWrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .addresWrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .addresText {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+  .ceoTelText {
+    padding: 1rem 0rem 0rem 2rem;
+  }
+
+  .addCeoWrap {
+    height: auto;
+  }
+
+  .companyText {
+    padding: 0rem 2rem 0rem 2rem;
+  }
+}

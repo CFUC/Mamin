@@ -74,6 +74,10 @@
   align-items: center;
 }
 
+.formBox {
+  width: 100%;
+}
+
 .nameWrap {
   width: 67rem;
 }
@@ -162,6 +166,7 @@
 }
 
 .checkWrap {
+  width: 67rem;
   padding-top: 1.2rem;
   display: flex;
   justify-content: flex-end;
@@ -170,8 +175,8 @@
 .checkContent {
   width: 90%;
   display: flex;
-  justify-content: space-between;
   padding-top: 1rem;
+  justify-content: space-between;
 }
 
 .checkMainContent {
@@ -225,4 +230,74 @@ input[type='checkbox']:checked + label::after {
   background-color: #d9d9d9;
   font-size: 1.6rem;
   font-weight: 500;
+}
+
+@media screen and (max-width: 880px) {
+  .nameWrap {
+    width: 90%;
+  }
+
+  .nameContent > label {
+    font-size: 1rem;
+  }
+
+  .emailWrap {
+    width: 90%;
+  }
+
+  .emailContent > label {
+    font-size: 1rem;
+  }
+
+  .inquliryWrap {
+    width: 90%;
+  }
+
+  .inquliryContent > label {
+    font-size: 1rem;
+  }
+
+  .checkWrap {
+    width: 90%;
+  }
+
+  .checkContent > span {
+    font-size: 1rem;
+  }
+
+  .checkMainContent > span {
+    font-size: 1rem;
+  }
+
+  .submitWrap {
+    width: 90%;
+  }
+
+  .submitWrap > input {
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contentWrap {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .textWrap {
+    width: 100%;
+    height: 30%;
+  }
+
+  .formWrap {
+    width: 100%;
+    height: 70%;
+    padding: 2rem;
+  }
+
+  .submitWrap {
+    padding-top: 3rem;
+  }
 }

@@ -1,12 +1,11 @@
-import { FormEvent } from "react";
-import styles from "./Inquliry.module.css";
+import styles from './Inquliry.module.css';
 const Inquliry = () => {
-  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+  const sendEmail = (e: any) => {
     e.preventDefault();
   };
 
   return (
-    <div className={styles.mainWrap} id="5">
+    <div className={styles.mainWrap}>
       <div className={styles.contentWrap}>
         <div className={styles.textWrap}>
           <div className={styles.textBox}>
@@ -25,7 +24,7 @@ const Inquliry = () => {
         </div>
 
         <div className={styles.formWrap}>
-          <form onSubmit={sendEmail}>
+          <form onSubmit={sendEmail} className={styles.formBox}>
             <div className={styles.nameWrap}>
               <div className={styles.nameContent}>
                 <label>성함</label>
