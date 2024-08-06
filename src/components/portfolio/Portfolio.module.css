@@ -28,14 +28,13 @@
   }
 
   .portfolioContainer {
-    grid-template-columns: repeat(2, auto);
-    column-gap: 8rem;
-    row-gap: 8rem;
+    column-gap: 3rem;
   }
 }
 
 @media (max-width: 750px) {
   .portfolioContainer {
+    grid-template-columns: repeat(2, auto);
     margin-top: 10rem;
     column-gap: 5rem;
     row-gap: 5rem;

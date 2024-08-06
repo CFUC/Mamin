@@ -1,6 +1,7 @@
+import { FormEvent } from "react";
 import styles from "./Inquliry.module.css";
 const Inquliry = () => {
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   };
 
