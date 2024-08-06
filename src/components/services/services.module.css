@@ -81,8 +81,16 @@
     }
 }
 
-
-@media screen and (max-width: 361px){
+@media screen and (max-width: 450px) {
+    .flexContainer{
+        height: 40%;
+    }
+    
+}
+@media screen and (max-width: 380px){
+    .flexContainer{
+        height: auto;
+    }
     .titleMarketing{
         font-size: 1.7rem;
     }
