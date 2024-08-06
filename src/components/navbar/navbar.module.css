@@ -82,3 +82,15 @@
         width: 40%;
     }
 }
+
+@media screen and (max-width: 330px) {
+    .logo{
+        width: 18%;
+    }
+    .logoBlack{
+        width: 18%;
+    }
+    .listContainer{
+        width: 45%;
+    }
+}
