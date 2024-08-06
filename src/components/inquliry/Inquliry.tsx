@@ -1,4 +1,4 @@
-import styles from "./Inquliry.module.css";
+import styles from './Inquliry.module.css';
 const Inquliry = () => {
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -45,11 +45,13 @@ const Inquliry = () => {
             </div>
             <div className={styles.checkWrap}>
               <div className={styles.checkContent}>
-                <div className={styles.checkMainContent}>
-                  <input type="checkbox" id="click" />
-                  <label htmlFor="click" />
-                  <span>개인정보 처리방침에 동의합니다.</span>
-                </div>
+                <label className={styles.checkLabel}>
+                  <input type="checkbox" />
+                  <span className={styles.checkIcon}></span>
+                  <span className={styles.checkMainText}>
+                    개인정보 처리방침에 동의합니다.
+                  </span>
+                </label>
                 <span>자세히보기</span>
               </div>
             </div>

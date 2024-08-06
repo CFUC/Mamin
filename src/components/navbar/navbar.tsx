@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
-import styles from "./navbar.module.css";
-import { Link } from "react-scroll";
+import { useEffect, useState } from 'react';
+import styles from './navbar.module.css';
+import { Link } from 'react-scroll';
 export default function Navbar() {
   const [black, setBlack] = useState(false);
   const [scroll, setScroll] = useState(0);
   useEffect(() => {
-    document.addEventListener("scroll", () => {
+    document.addEventListener('scroll', () => {
       setScroll(window.scrollY);
     });
   }, []);
@@ -21,10 +21,11 @@ export default function Navbar() {
     <div
       className={styles.main}
       style={{
-        background: `${black ? "#FFFFFF" : "none"}`,
-        borderBottom: `${black ? "1px solid #DDDDDD" : "none"}`,
+        background: `${black ? '#FFFFFF' : 'none'}`,
+        borderBottom: `${black ? '1px solid #DDDDDD' : 'none'}`,
       }}
     >
+      <div className={styles.mainContainer}>
         <Link
           to="1"
           spy={true}
@@ -45,6 +46,7 @@ export default function Navbar() {
             <label>광고문의</label>
           </Link>
         </div>
+      </div>
     </div>
   );
 }
