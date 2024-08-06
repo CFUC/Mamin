@@ -31,6 +31,7 @@
 
 @media (max-width: 950px) {
   .processContainer {
+    margin-top: 8rem;
     display: grid;
     grid-template-columns: repeat(5, auto);
     column-gap: 5rem;
@@ -42,6 +43,6 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     column-gap: 6rem;
-    row-gap: 1rem;
+    row-gap: 2rem;
   }
 }
