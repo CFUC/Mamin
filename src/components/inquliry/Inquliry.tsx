@@ -56,7 +56,9 @@ const Inquliry = () => {
               </div>
             </div>
             <div className={styles.submitWrap}>
-              <input type="submit" value="문의하기" />
+              <div className={styles.submitBox}>
+                <input type="submit" value="문의하기" />
+              </div>
             </div>
           </form>
         </div>
