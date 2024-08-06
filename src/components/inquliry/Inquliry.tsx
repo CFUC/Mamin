@@ -25,8 +25,10 @@ const Inquliry = () => {
       setChecking(false);
     }).catch((err)=>{
       if(err.response.status == 429){
-        alert("잠시후에 시도해주세요");
+        return alert("잠시후에 시도해주세요");
       }
+
+      return alert("서버에 문제가 발생하였습니다");
     })
   };
 
