@@ -56,25 +56,49 @@ const Inquliry = () => {
             <div className={styles.nameWrap}>
               <div className={styles.nameContent}>
                 <label>성함</label>
-                <input type="text" value={name} onChange={(e)=>{setname(e.target.value)}}/>
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => {
+                    setname(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <div className={styles.emailWrap}>
               <div className={styles.emailContent}>
                 <label>연락처</label>
-                <input type="text" value={phoneNumber} onChange={(e)=>{setPhoneNumber(e.target.value)}}/>
+                <input
+                  type="text"
+                  value={phoneNumber}
+                  onChange={(e) => {
+                    setPhoneNumber(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <div className={styles.inquliryWrap}>
               <div className={styles.inquliryContent}>
                 <label>문의내용</label>
-                <textarea name="Inquiry"  value={message} onChange={(e)=>{setMessage(e.target.value)}}/>
+                <textarea
+                  name="Inquiry"
+                  value={message}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <div className={styles.checkWrap}>
               <div className={styles.checkContent}>
                 <label className={styles.checkLabel}>
-                  <input type="checkbox" checked={checking} onClick={()=>{setChecking(!checking)}}/>
+                  <input
+                    type="checkbox"
+                    checked={checking}
+                    onClick={() => {
+                      setChecking(!checking);
+                    }}
+                  />
                   <span className={styles.checkIcon}></span>
                   <span className={styles.checkMainText}>
                     개인정보 처리방침에 동의합니다.
