@@ -24,7 +24,7 @@ const Inquliry = () => {
         </div>
 
         <div className={styles.formWrap}>
-          <form onSubmit={sendEmail}>
+          <form onSubmit={sendEmail} className={styles.formBox}>
             <div className={styles.nameWrap}>
               <div className={styles.nameContent}>
                 <label>성함</label>

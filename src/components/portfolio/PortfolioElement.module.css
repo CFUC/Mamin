@@ -6,7 +6,7 @@
 
 @media (max-width: 950px) {
   .container {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1.3;
     height: auto;
   }
 }

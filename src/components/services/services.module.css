@@ -1,6 +1,6 @@
 .container{
     width: 100%;
-    padding: 6vh 0;
+    padding-top: 6vh;
 }
 
 .itemContainer{
@@ -24,6 +24,7 @@
     padding: 3rem;
     color: #FFF;
     box-sizing: border-box;
+    background: url('https://s3-alpha-sig.figma.com/img/33e2/8c9b/9270a023b544c3824744bb9e7b4efd6d?Expires=1724025600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b0LM1LMIt32nIyR1ON69F5tXgTbWRvZCrvT6HjlhByFIVPXepA2p5upa2xCAhgtqmzqE2IIAFZ8M7yxyo3WOzrHfixS4O9iSPQetXeHRGIc32siyLP6wNedzNAlLkOdR6SUjxvqdAeSzIyK3GblHYnBfWKwGucuDURc3cdo24rmOhJsMOsbj9N64ODIr~7M5iggyKphgFbsetdOH6aq2x~pgGFktGsIxqKFMKpMeHSYE5zH5AQE1S8dZOfNf3qYpcZLF1SBtyrUSlkmSp9gPXq2PVHykjsZ42Igl2BsyYe3Sqp0ruDe6~f-9JpEAxDbobqKDvoGSYmXPTUzgSR0xMQ__');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
