@@ -1,0 +1,228 @@
+.mainWrap {
+  width: 100%;
+  height: 100rem;
+  background-color: #3a84c4;
+}
+
+.contentWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.textWrap {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainText {
+  width: auto;
+  color: white;
+  font-size: 4rem;
+  display: flex;
+  justify-content: start;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  width: 19rem;
+  height: 3.4rem;
+}
+
+.logoSubText {
+  height: 4.8rem;
+  padding-left: 1.2rem;
+}
+
+.logoSubText > div {
+  line-height: 4.7rem;
+  height: 4.8rem;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.mainText > span {
+  font-weight: 600;
+  padding-right: 1rem;
+}
+
+.subText {
+  width: auto;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: start;
+  padding-top: 1.9rem;
+}
+
+.formWrap {
+  width: 50%;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.nameWrap {
+  width: 67rem;
+}
+
+.nameContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameContent > label {
+  width: 10%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+}
+
+.nameContent > input {
+  width: 90%;
+  height: 5.5rem;
+  border: none;
+  outline: none;
+  padding: 0.2rem;
+  background-color: #d9d9d9;
+}
+
+.emailWrap {
+  width: 67rem;
+  padding-top: 3.4rem;
+}
+
+.emailContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emailContent > label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  width: 10%;
+  display: flex;
+  justify-content: start;
+}
+
+.emailContent > input {
+  width: 90%;
+  height: 5.5rem;
+  border: none;
+  outline: none;
+  padding: 0.2rem;
+  background-color: #d9d9d9;
+}
+
+.inquliryWrap {
+  width: 67rem;
+  padding-top: 3.4rem;
+}
+
+.inquliryContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inquliryContent > label {
+  width: 10%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: start;
+}
+
+.inquliryContent > textarea {
+  width: 90%;
+  height: 30rem;
+  resize: none;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  background-color: #d9d9d9;
+}
+
+.checkWrap {
+  padding-top: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkContent {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.checkMainContent {
+  display: flex;
+  align-items: center;
+}
+
+input[type='checkbox'] {
+  display: none;
+  content: '';
+}
+
+input[type='checkbox'] + label {
+  display: inline-block;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+input[type='checkbox']:checked + label::after {
+  content: '✔️';
+  font-size: 1rem;
+}
+
+.checkContent > span {
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.checkMainContent > span {
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.submitWrap {
+  padding-top: 9.3rem;
+  width: 62rem;
+  display: flex;
+  justify-content: center;
+}
+
+.submitWrap > input {
+  width: 9rem;
+  height: 3.3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #d9d9d9;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
