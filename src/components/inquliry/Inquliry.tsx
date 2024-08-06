@@ -27,14 +27,14 @@ const Inquliry = () => {
         phoneNumber,
         message,
       })
-      .then((res: any) => {
+      .then((res) => {
         alert('문의완료');
         setname('');
         setPhoneNumber('');
         setMessage('');
         setChecking(false);
       })
-      .catch((err: any) => {
+      .catch((err) => {
         if (err.response.status == 429) {
           alert('잠시후에 시도해주세요');
         }
