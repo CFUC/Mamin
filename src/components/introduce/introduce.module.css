@@ -62,7 +62,7 @@
 @media screen and (max-width: 775px) {
     .width400{
         width: 90%;
-        margin: 0 auto;
+        margin: 20px auto;
         display: flex;
         justify-content: center;
     }

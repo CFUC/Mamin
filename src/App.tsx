@@ -22,9 +22,9 @@ function App() {
       <Portfolio />
       <AdList />
       <AdProcess />
-      <Inquliry />
+      {/* <Inquliry />
       <MapCom />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
