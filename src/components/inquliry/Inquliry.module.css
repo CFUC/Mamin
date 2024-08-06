@@ -220,6 +220,7 @@ input[type='checkbox'] {
   font-size: 1.6rem;
   font-weight: 500;
   cursor: pointer;
+  padding-left: 1rem;
 }
 
 .checkContent {
