@@ -1,0 +1,72 @@
+.mainWrap {
+  width: 100%;
+  height: 30rem;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentWrap {
+  width: 70%;
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.referenceWrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.referenceText {
+  padding: 0rem 2rem 0rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.addCeoWrap {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.addresWrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.addresText {
+  padding: 4.6rem 2rem 0rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.ceoTelWrap {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ceoTelText {
+  padding: 1.5rem 0rem 0rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.companyWrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.companyText {
+  padding: 9.4rem 2rem 0rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}

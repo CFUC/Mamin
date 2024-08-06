@@ -47,3 +47,53 @@
     aspect-ratio: 0.8/1;
     background-color: #D9D9D9;
 }
+
+.width400{
+    display: none;
+}
+@media screen and (max-width: 820px) {
+    .image{
+        min-width: 200px;
+        position: relative;
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .width400{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .image{
+        left: 0;
+    }
+    .imageContainer{
+        display: none;
+    }
+    .textContainer{
+        width: 100vw;
+        display: block;
+        margin-top: 60px;
+    }
+    .titleContainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .subTitleContainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .subTitle{
+        width: 100%;
+        white-space: normal;
+    }
+}
+
+
+@media screen and (max-width: 355px) {
+    .mainTitle{
+        font-size: 3rem;
+    }
+}
