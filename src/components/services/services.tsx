@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "./services.module.css";
 
 export default function Services() {
-  const [item, setItem] = useState([
+  const [item] = useState([
     [
       {
         title: "브랜드 마케팅",
@@ -48,11 +48,9 @@ export default function Services() {
     <div className={styles.container} id="3">
       <div className={styles.title}>마케팅 민족 서비스 영역</div>
       <div className={styles.itemContainer}>
-        {item.map((it,idx) => {
+        {item.map((it, idx) => {
           return (
-            <div className={styles.flexContainer}
-						key={idx}
-						>
+            <div className={styles.flexContainer} key={idx}>
               {it.map((it, idx) => {
                 const position =
                   idx + 1 === 1
@@ -65,7 +63,7 @@ export default function Services() {
                     style={{ backgroundImage: `url(${it.img})`}}
                     className={`${styles.item} ${position}`}
                     data-aos="fade-up"
-										key={idx}
+                    key={idx}
                   >
                     <p className={styles.titleMarketing}>{it.title}</p>
 
