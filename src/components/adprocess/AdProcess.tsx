@@ -4,27 +4,27 @@ import AdProcessElement from "./AdProcessElement";
 const adProcessData = [
   {
     id: 1,
-    icon: "images/pieIcon.png",
+    icon: "images/meetIcon.svg",
     title: "유선상담\n대면미팅",
   },
   {
     id: 2,
-    icon: "images/aiIcon.png",
+    icon: "images/presentIcon.svg",
     title: "광고기획\n전략수립",
   },
   {
     id: 3,
-    icon: "images/phoneMapIcon.png",
+    icon: "images/puzzleIcon.svg",
     title: "KPI에 맞는\n캠페인 운영",
   },
   {
     id: 4,
-    icon: "images/barGraphIcon.png",
+    icon: "images/pieIcon.svg",
     title: "광고 집행\n및 모니터링",
   },
   {
     id: 5,
-    icon: "images/pieDocIcon.png",
+    icon: "images/monitorShareIcon.svg",
     title: "광고 결과\n보고서 제공",
   },
 ];
