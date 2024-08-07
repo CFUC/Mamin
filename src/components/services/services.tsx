@@ -60,7 +60,7 @@ export default function Services() {
                     : styles.positionDown;
                 return (
                   <div
-                    style={{ backgroundImage: `url(${it.img})` }}
+                    style={{ backgroundImage: `url(${it.img})`}}
                     className={`${styles.item} ${position}`}
                     data-aos="fade-up"
                     key={idx}

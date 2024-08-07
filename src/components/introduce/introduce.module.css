@@ -45,7 +45,11 @@
 .image{
     width: 45%;
     aspect-ratio: 0.8/1;
-    background-color: #D9D9D9;
+    /* background-color: #D9D9D9; */
+    background-image: url('../../../public/images/company.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .width400{
