@@ -72,6 +72,7 @@ const AdList = () => {
           }}
           speed={10000}
           spaceBetween={60}
+          grabCursor
         >
           {adData.map((ad) => (
             <SwiperSlide key={ad.id}>

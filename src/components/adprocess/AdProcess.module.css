@@ -8,6 +8,7 @@
   width: 100%;
   max-width: 149rem;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 .title {
@@ -22,19 +23,12 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  column-gap: 2rem;
+  column-gap: 3rem;
+  row-gap: 5rem;
 }
 
 .arrowIcon {
-  width: 2.8rem;
-  height: 2.8rem;
-  transform: translateY(-200%);
-}
-
-@media (max-width: 580px) {
-  .processContainer {
-    flex-direction: column;
-    align-items: center;
-    row-gap: 5rem;
-  }
+  width: 3rem;
+  height: 3rem;
+  transform: translateY(-2rem);
 }

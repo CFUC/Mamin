@@ -1,23 +1,39 @@
+import { useEffect, useState } from "react";
 import styles from "./AdProcessElement.module.css";
 
 const AdProcessElement = ({
   icon,
   title,
-  index,
+  id,
   size,
 }: {
   icon: string;
   title: string;
-  index: number;
+  id: number;
   size: number;
 }) => {
+  const [colorSize, setColorSize] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      console.log(colorSize);
+      setColorSize(colorSize + size / 500);
+    }, 1);
+
+    setTimeout(() => {
+      setColorSize(size);
+
+      clearInterval(interval);
+    }, 500);
+  }, []);
+
   return (
     <div
       className={styles.container}
       data-aos="fade-up"
-      data-aos-delay={100 * (index - 1)}
+      data-aos-delay={100 * (id - 1)}
     >
-      <div className={styles.step}>STEP{index < 10 ? `0${index}` : index}</div>
+      <div className={styles.step}>STEP{id < 10 ? `0${id}` : id}</div>
       <div
         className={styles.iconConatiner}
         style={{

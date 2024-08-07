@@ -46,14 +46,11 @@ const AdProcess = () => {
                 key={service.id}
                 icon={service.icon}
                 title={service.title}
-                index={service.id}
+                id={service.id}
                 size={service.size}
               />
-              {arr.length - 1 > idx && (
-                <img
-                  src={"images/arrowIcon.png"}
-                  className={styles.arrowIcon}
-                />
+              {arr.length - 1 !== idx && (
+                <img src="images/arrowIcon.png" className={styles.arrowIcon} />
               )}
             </>
           ))}
