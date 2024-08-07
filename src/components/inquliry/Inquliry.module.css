@@ -12,7 +12,7 @@
 }
 
 .textWrap {
-  width: 50%;
+  width: 45%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -65,115 +65,155 @@
   padding-top: 1.9rem;
 }
 
-.formWrap {
-  width: 50%;
+.rightSection {
+  width: 55%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightSectionTextWrap {
+  width: 85rem;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightSectionTextContainer {
+  width: 60%;
+}
+
+.rightSectionTextContent {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.rightSectionSubTextContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.rightSectionsubTextContent {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.rightSectionsubTextContent > span {
+  color: #ff5757;
+}
+
+.formWrap {
+  width: 100%;
   color: white;
   display: flex;
   justify-content: start;
   align-items: center;
+  padding-top: 1.3rem;
 }
 
 .formBox {
-  width: 100%;
+  width: 85rem;
 }
 
-.nameWrap {
-  width: 64rem;
-}
-
-.nameContent {
+.inputWrap {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3.4rem;
+}
+
+.inputContainer {
+  width: 39rem;
+}
+
+.inputTextWrap {
+  width: 100%;
+}
+
+.inputTextContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.nameContent > label {
-  width: 15%;
-  font-size: 1.6rem;
-  font-weight: 500;
+.inputTextContainer > label {
+  height: 3.1rem;
+  font-size: 2.4rem;
+  font-weight: 600;
   display: flex;
   justify-content: start;
 }
 
-.nameContent > input {
-  width: 85%;
-  height: 5.5rem;
+.inputTextContainer > input {
+  width: 27.1rem;
+  height: 3.5rem;
   border: none;
   outline: none;
   padding: 1rem;
-  background-color: #d9d9d9;
+  background-color: #f0f0f0;
 }
 
-.emailWrap {
-  width: 64rem;
-  padding-top: 3.4rem;
-}
-
-.emailContent {
-  width: 100%;
+.inputTextBox {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.emailContent > label {
-  font-size: 1.6rem;
-  font-weight: 500;
-  width: 15%;
-  display: flex;
-  justify-content: start;
+.inputText {
+  height: 2.4rem;
 }
 
-.emailContent > input {
-  width: 85%;
-  height: 5.5rem;
-  border: none;
-  outline: none;
-  padding: 1rem;
-  background-color: #d9d9d9;
+.inputStar {
+  height: 100%;
+  color: #ff5757;
 }
 
-.inquliryWrap {
-  width: 64rem;
-  padding-top: 3.4rem;
+.textareaWrap {
+  width: 100%;
+  margin-top: -0.4rem;
 }
 
-.inquliryContent {
+.textareaContent {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.inquliryContent > label {
-  width: 15%;
-  font-size: 1.6rem;
+.textareaContent > label {
+  font-size: 2.4rem;
   font-weight: 500;
   display: flex;
   justify-content: start;
 }
 
-.inquliryContent > textarea {
-  width: 85%;
+.textareaContent > textarea {
+  width: 73rem;
   height: 30rem;
   resize: none;
   outline: none;
   border: none;
   padding: 1rem;
-  background-color: #d9d9d9;
+  background-color: #f0f0f0;
 }
 
 .checkWrap {
-  width: 64rem;
+  width: 100%;
   padding-top: 1.2rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .checkContent {
-  width: 85%;
+  width: 73rem;
   display: flex;
   justify-content: space-between;
 }
@@ -216,7 +256,7 @@ input[type='checkbox'] {
 }
 
 .checkMainText {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   cursor: pointer;
   padding-left: 1rem;
@@ -228,28 +268,34 @@ input[type='checkbox'] {
 }
 
 .checkContent > span {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   cursor: pointer;
 }
 
 .submitWrap {
-  padding-top: 1.9rem;
-  width: 64rem;
+  width: 100%;
+  padding-top: 2.2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitBox {
+  width: 73rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .submitBox > input {
-  width: 9rem;
+  width: 10rem;
   height: 3.3rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #d9d9d9;
+  background-color: #f0f0f0;
   color: black;
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
 @media screen and (max-width: 880px) {
