@@ -4,12 +4,13 @@
 
 .inner {
   width: 100%;
-  max-width: 170rem;
+  max-width: 135.6rem;
   margin: 0 auto;
+  /* box-shadow: inset 0px 0px 10px 10px black; */
 }
 
 .adList {
-  padding: 10rem 0;
+  height: 100%;
 }
 
 .adList > div {
@@ -17,9 +18,9 @@
 }
 
 .adElement {
-  width: 20rem;
-  filter: grayscale();
-  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 @media (max-width: 670px) {

@@ -20,8 +20,15 @@
   margin-top: 10.8rem;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  column-gap: 8.5rem;
+  column-gap: 2rem;
+}
+
+.arrowIcon {
+  width: 2.8rem;
+  height: 2.8rem;
+  transform: translateY(-200%);
 }
 
 @media (max-width: 580px) {

@@ -25,7 +25,7 @@ function App() {
       <AdList />
       <AdProcess />
       <Inquliry />
-      {/* <MapCom /> */}
+      <MapCom />
       <Footer />
     </>
   );

@@ -1,0 +1,10 @@
+.swiper-wrapper {
+  height: 100%;
+}
+
+.swiper-slide {
+  width: auto;
+  height: 5.3rem;
+  display: flex;
+  align-items: center;
+}
