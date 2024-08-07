@@ -1,6 +1,6 @@
 .icon {
   width: 5.2rem;
-  height: 5.3rem;
+  height: 5.2rem;
 }
 
 .title {
@@ -13,10 +13,10 @@
 .content {
   color: white;
   font-weight: 300;
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-top: 3.6rem;
   white-space: pre-wrap;
-  line-height: 2.4rem;
+  line-height: 3.3rem;
 }
 
 @media (max-width: 1200px) {
