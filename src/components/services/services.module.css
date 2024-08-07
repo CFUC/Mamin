@@ -66,7 +66,7 @@
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 670px) {
     .container{
         height: 100vh;
     }
@@ -88,12 +88,28 @@
     }
     
 }
-@media screen and (max-width: 380px){
+@media screen and (max-width: 375px) {
     .flexContainer{
-        height: auto;
+        height: 45%;
+    }
+
+    .depMarketingItem{
+        font-size: 1.4rem;
+    }
+    
+}
+@media screen and (max-width: 370px){
+    .itemContainer{
+        align-content: center;
+    }
+    .flexContainer{
+        height: 35%;
     }
     .titleMarketing{
-        font-size: 1.7rem;
+        font-size: 1.4rem;
+    }
+    .depMarketingItem{
+        font-size: 1rem;
     }
 
 }

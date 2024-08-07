@@ -79,7 +79,7 @@
 }
 
 .nameWrap {
-  width: 67rem;
+  width: 64rem;
 }
 
 .nameContent {
@@ -90,7 +90,7 @@
 }
 
 .nameContent > label {
-  width: 10%;
+  width: 15%;
   font-size: 1.6rem;
   font-weight: 500;
   display: flex;
@@ -98,7 +98,7 @@
 }
 
 .nameContent > input {
-  width: 90%;
+  width: 85%;
   height: 5.5rem;
   border: none;
   outline: none;
@@ -107,7 +107,7 @@
 }
 
 .emailWrap {
-  width: 67rem;
+  width: 64rem;
   padding-top: 3.4rem;
 }
 
@@ -121,13 +121,13 @@
 .emailContent > label {
   font-size: 1.6rem;
   font-weight: 500;
-  width: 10%;
+  width: 15%;
   display: flex;
   justify-content: start;
 }
 
 .emailContent > input {
-  width: 90%;
+  width: 85%;
   height: 5.5rem;
   border: none;
   outline: none;
@@ -136,7 +136,7 @@
 }
 
 .inquliryWrap {
-  width: 67rem;
+  width: 64rem;
   padding-top: 3.4rem;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .inquliryContent > label {
-  width: 10%;
+  width: 15%;
   font-size: 1.6rem;
   font-weight: 500;
   display: flex;
@@ -156,7 +156,7 @@
 }
 
 .inquliryContent > textarea {
-  width: 90%;
+  width: 85%;
   height: 30rem;
   resize: none;
   outline: none;
@@ -166,14 +166,14 @@
 }
 
 .checkWrap {
-  width: 67rem;
+  width: 64rem;
   padding-top: 1.2rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .checkContent {
-  width: 90%;
+  width: 85%;
   display: flex;
   padding-top: 1rem;
   justify-content: space-between;
@@ -189,10 +189,17 @@ input[type='checkbox'] {
   align-items: center;
 }
 
+.checkIcon {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 .checkIcon::before {
   content: '';
   display: block;
-  margin-right: 5px;
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
@@ -213,6 +220,12 @@ input[type='checkbox'] {
   font-size: 1.6rem;
   font-weight: 500;
   cursor: pointer;
+  padding-left: 1rem;
+}
+
+.checkContent {
+  display: flex;
+  align-items: center;
 }
 
 .checkContent > span {
@@ -222,26 +235,31 @@ input[type='checkbox'] {
 }
 
 .submitWrap {
-  padding-top: 9.3rem;
-  width: 62rem;
+  padding-top: 6.5rem;
+  width: 64rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
-.submitWrap > input {
+.submitBox > input {
   width: 9rem;
   height: 3.3rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   background-color: #d9d9d9;
+  color: black;
   font-size: 1.6rem;
   font-weight: 500;
 }
 
 @media screen and (max-width: 880px) {
+  .formBox {
+    width: 100%;
+  }
+
   .nameWrap {
-    width: 90%;
+    width: 100%;
   }
 
   .nameContent > label {
@@ -249,7 +267,7 @@ input[type='checkbox'] {
   }
 
   .emailWrap {
-    width: 90%;
+    width: 100%;
   }
 
   .emailContent > label {
@@ -257,7 +275,7 @@ input[type='checkbox'] {
   }
 
   .inquliryWrap {
-    width: 90%;
+    width: 100%;
   }
 
   .inquliryContent > label {
@@ -265,22 +283,31 @@ input[type='checkbox'] {
   }
 
   .checkWrap {
-    width: 90%;
+    width: 100%;
+    justify-content: center;
+    padding-top: 1%;
   }
 
   .checkContent > span {
     font-size: 1rem;
   }
 
-  .checkMainContent > span {
+  .checkLabel > span {
     font-size: 1rem;
   }
 
-  .submitWrap {
-    width: 90%;
+  .checkIcon::before {
+    width: 70%;
+    height: 70%;
   }
 
-  .submitWrap > input {
+  .submitWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .submitBox > input {
     width: 5rem;
     height: 2rem;
     font-size: 1rem;
@@ -295,16 +322,70 @@ input[type='checkbox'] {
 
   .textWrap {
     width: 100%;
-    height: 30%;
+    height: 20%;
   }
 
   .formWrap {
     width: 100%;
-    height: 70%;
+    height: 80%;
     padding: 2rem;
   }
 
+  .nameContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nameContent > label {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .emailContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .emailContent > label {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .inquliryContent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inquliryContent > label {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .checkContent > span {
+    font-size: 2rem;
+  }
+
+  .checkLabel > span {
+    font-size: 2rem;
+  }
+
   .submitWrap {
-    padding-top: 3rem;
+    padding-top: 5%;
+  }
+
+  .submitBox > input {
+    width: 10rem;
+    height: 4rem;
+    font-size: 2rem;
   }
 }

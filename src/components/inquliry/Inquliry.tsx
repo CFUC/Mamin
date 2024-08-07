@@ -1,7 +1,35 @@
+import axios from 'axios';
 import styles from './Inquliry.module.css';
+import { useState } from 'react';
 const Inquliry = () => {
+  const [name, setname] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [message, setMessage] = useState('');
+  const [checking, setChecking] = useState(false);
   const sendEmail = (e: any) => {
     e.preventDefault();
+    if(!name){return alert('성함을 입력해주세요');}
+    if(!phoneNumber){return alert('전화번호를 입력해주세요');}
+    if(!message){return alert('문의내용을 입력해주세요');}
+    if(!checking){return alert('개인정보 처리방침에 동의해주세요');}
+    
+    axios.post('/email/send',{
+      name,
+      phoneNumber,
+      message
+    }).then((res)=>{
+      alert("문의완료");
+      setname('');
+      setPhoneNumber('');
+      setMessage('');
+      setChecking(false);
+    }).catch((err)=>{
+      if(err.response.status == 429){
+        return alert("잠시후에 시도해주세요");
+      }
+
+      return alert("서버에 문제가 발생하였습니다");
+    })
   };
 
   return (
@@ -28,25 +56,49 @@ const Inquliry = () => {
             <div className={styles.nameWrap}>
               <div className={styles.nameContent}>
                 <label>성함</label>
-                <input type="text" />
+                <input
+                  type="text"
+                  value={name}
+                  onChange={(e) => {
+                    setname(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <div className={styles.emailWrap}>
               <div className={styles.emailContent}>
                 <label>연락처</label>
-                <input type="text" />
+                <input
+                  type="text"
+                  value={phoneNumber}
+                  onChange={(e) => {
+                    setPhoneNumber(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <div className={styles.inquliryWrap}>
               <div className={styles.inquliryContent}>
                 <label>문의내용</label>
-                <textarea name="Inquiry" />
+                <textarea
+                  name="Inquiry"
+                  value={message}
+                  onChange={(e) => {
+                    setMessage(e.target.value);
+                  }}
+                />
               </div>
             </div>
             <div className={styles.checkWrap}>
               <div className={styles.checkContent}>
                 <label className={styles.checkLabel}>
-                  <input type="checkbox" />
+                  <input
+                    type="checkbox"
+                    checked={checking}
+                    onClick={() => {
+                      setChecking(!checking);
+                    }}
+                  />
                   <span className={styles.checkIcon}></span>
                   <span className={styles.checkMainText}>
                     개인정보 처리방침에 동의합니다.
@@ -56,7 +108,9 @@ const Inquliry = () => {
               </div>
             </div>
             <div className={styles.submitWrap}>
-              <input type="submit" value="문의하기" />
+              <div className={styles.submitBox}>
+                <input type="submit" value="문의하기" />
+              </div>
             </div>
           </form>
         </div>
