@@ -63,6 +63,7 @@ export default function Services() {
                     style={{ backgroundImage: `url(${it.img})`}}
                     className={`${styles.item} ${position}`}
                     data-aos="fade-up"
+                    data-aos-delay={100 * (idx)}
                     key={idx}
                   >
                     <p className={styles.titleMarketing}>{it.title}</p>
