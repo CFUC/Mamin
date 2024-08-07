@@ -6,13 +6,14 @@
 
 .inner {
   width: 100%;
-  max-width: 149rem;
+  max-width: 140rem;
   margin: 0 auto;
 }
 
 .title {
   font-weight: 600;
   font-size: 4rem;
+  color: white;
 }
 
 .serviceContainer {

@@ -15,7 +15,7 @@ import MetaTag from "./common/MetaTag";
 function App() {
   return (
     <>
-      <MetaTag/>
+      <MetaTag />
       <Navbar />
       <Main />
       <Introduce />
@@ -25,7 +25,7 @@ function App() {
       <AdList />
       <AdProcess />
       <Inquliry />
-      <MapCom />
+      {/* <MapCom /> */}
       <Footer />
     </>
   );
