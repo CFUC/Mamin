@@ -58,7 +58,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 590px) {
     .listContainer{
         width: 30%;
     }
