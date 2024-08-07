@@ -33,7 +33,7 @@ const serviceData = [
   },
   {
     id: 5,
-    icon: "images/messageIcon.png",
+    icon: "images/messageWhiteIcon.png",
     title: "바이럴 광고",
     content:
       "사용자 간 공유를 유도해 자연스럽게\n퍼져 나가는 광고로 높은 도달률을 보장합니다.\n유튜브 바이럴 영상, 인플루언서 협업 콘텐츠,\n스토리 광고 등",
