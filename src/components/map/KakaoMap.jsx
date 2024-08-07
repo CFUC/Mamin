@@ -1,10 +1,10 @@
-import { useEffect } from 'react';
-import styles from './KakaoMap.module.css';
+import { useEffect } from "react";
+import styles from "./KakaoMap.module.css";
 const { kakao } = window;
 
 const Location = () => {
   useEffect(() => {
-    var container = document.getElementById('map');
+    var container = document.getElementById("map");
     var options = {
       center: new kakao.maps.LatLng(35.871851451638584, 128.6249901868612),
       level: 3,
@@ -31,7 +31,7 @@ const Location = () => {
       removable: iwRemoveable,
     });
 
-    kakao.maps.event.addListener(marker, 'click', function () {
+    kakao.maps.event.addListener(marker, "click", function () {
       infowindow.open(map, marker);
     });
   }, []);
