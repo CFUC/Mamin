@@ -48,9 +48,11 @@ export default function Services() {
     <div className={styles.container} id="3">
       <div className={styles.title}>마케팅 민족 서비스 영역</div>
       <div className={styles.itemContainer}>
-        {item.map((it) => {
+        {item.map((it,idx) => {
           return (
-            <div className={styles.flexContainer}>
+            <div className={styles.flexContainer}
+						key={idx}
+						>
               {it.map((it, idx) => {
                 const position =
                   idx + 1 === 1
@@ -60,9 +62,10 @@ export default function Services() {
                     : styles.positionDown;
                 return (
                   <div
-                    style={{ backgroundImage: `url(${it.img})` }}
+                    style={{ backgroundImage: `url(${it.img})`}}
                     className={`${styles.item} ${position}`}
                     data-aos="fade-up"
+										key={idx}
                   >
                     <p className={styles.titleMarketing}>{it.title}</p>
 

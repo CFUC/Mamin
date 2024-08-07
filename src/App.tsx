@@ -10,10 +10,12 @@ import Services from "./components/services/services";
 import Inquliry from "./components/inquliry/Inquliry";
 import MapCom from "./components/map/MapCom";
 import Footer from "./components/footer/Footer";
+import MetaTag from "./common/MetaTag";
 
 function App() {
   return (
     <>
+      <MetaTag/>
       <Navbar />
       <Main />
       <Introduce />
