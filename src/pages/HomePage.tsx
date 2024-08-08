@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import AdList from "../components/adlist/AdList";
 import AdProcess from "../components/adprocess/AdProcess";
 import Inquliry from "../components/inquliry/Inquliry";
@@ -9,6 +10,9 @@ import ServiceIntroduce from "../components/serviceIntroduce/ServiceIntroduce";
 import Services from "../components/services/services";
 
 const HomePage = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <>
       <Main />
