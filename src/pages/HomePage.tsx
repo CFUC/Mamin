@@ -10,9 +10,9 @@ import ServiceIntroduce from "../components/serviceIntroduce/ServiceIntroduce";
 import Services from "../components/services/services";
 
 const HomePage = () => {
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[])
+  }, []);
   return (
     <>
       <Main />
