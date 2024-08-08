@@ -49,7 +49,7 @@ const Inquliry = () => {
   };
 
   return (
-    <div className={styles.mainWrap}>
+    <div className={styles.mainWrap} id='5'>
       <div className={styles.contentWrap}>
         <div className={styles.textWrap}>
           <div className={styles.textBox}>
