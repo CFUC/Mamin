@@ -12,7 +12,7 @@
 }
 
 .textWrap {
-  width: 50%;
+  width: 45%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -23,7 +23,6 @@
 .mainText {
   width: auto;
   color: white;
-  font-size: 4rem;
   display: flex;
   justify-content: start;
 }
@@ -34,146 +33,190 @@
 }
 
 .logo > img {
-  width: 19rem;
-  height: 3.4rem;
+  width: 30rem;
+  height: 5.5rem;
 }
 
 .logoSubText {
-  height: 4.8rem;
-  padding-left: 1.2rem;
+  height: 5.5rem;
+  padding-left: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .logoSubText > div {
-  line-height: 4.7rem;
-  height: 4.8rem;
-  font-size: 4rem;
+  height: 5rem;
+  line-height: 6rem;
+  font-size: 4.2rem;
   font-weight: 600;
-}
-
-.mainText > span {
-  font-weight: 600;
-  padding-right: 1rem;
 }
 
 .subText {
   width: auto;
-  font-size: 1.8rem;
-  font-weight: 500;
+  font-size: 4.2rem;
+  font-weight: 600;
   color: white;
   display: flex;
   justify-content: start;
-  padding-top: 1.9rem;
+  padding-top: 0.4rem;
+}
+
+.rightSection {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightSectionTextWrap {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .formWrap {
-  width: 50%;
-  height: 100%;
+  width: 100%;
   color: white;
   display: flex;
   justify-content: start;
   align-items: center;
+  padding-top: 1.3rem;
+}
+
+.rightSectionBoxContainer {
+  width: 85rem;
+  height: 100%;
+  display: flex;
 }
 
 .formBox {
-  width: 100%;
+  width: 85rem;
 }
 
-.nameWrap {
-  width: 64rem;
+.rightSectionTextContainer {
+  width: 60%;
 }
 
-.nameContent {
+.rightSectionTextContent {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.rightSectionSubTextContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.rightSectionsubTextContent {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.rightSectionsubTextContent > span {
+  color: #ff5757;
+}
+
+.inputWrap {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 3.4rem;
+}
+
+.inputContainer {
+  width: 39rem;
+}
+
+.inputTextWrap {
+  width: 100%;
+}
+
+.inputTextContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.nameContent > label {
-  width: 15%;
-  font-size: 1.6rem;
-  font-weight: 500;
+.inputTextContainer > label {
+  height: 3.1rem;
+  font-size: 2.4rem;
+  font-weight: 600;
   display: flex;
   justify-content: start;
 }
 
-.nameContent > input {
-  width: 85%;
-  height: 5.5rem;
+.inputTextContainer > input {
+  width: 27.1rem;
+  height: 3.5rem;
   border: none;
   outline: none;
   padding: 1rem;
-  background-color: #d9d9d9;
+  background-color: #f0f0f0;
 }
 
-.emailWrap {
-  width: 64rem;
-  padding-top: 3.4rem;
-}
-
-.emailContent {
-  width: 100%;
+.inputTextBox {
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
-.emailContent > label {
-  font-size: 1.6rem;
-  font-weight: 500;
-  width: 15%;
-  display: flex;
-  justify-content: start;
+.inputText {
+  height: 2.4rem;
 }
 
-.emailContent > input {
-  width: 85%;
-  height: 5.5rem;
-  border: none;
-  outline: none;
-  padding: 1rem;
-  background-color: #d9d9d9;
+.inputStar {
+  height: 100%;
+  color: #ff5757;
 }
 
-.inquliryWrap {
-  width: 64rem;
-  padding-top: 3.4rem;
+.textareaWrap {
+  width: 100%;
+  margin-top: -0.4rem;
 }
 
-.inquliryContent {
+.textareaContent {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
-.inquliryContent > label {
-  width: 15%;
-  font-size: 1.6rem;
+.textareaContent > label {
+  font-size: 2.4rem;
   font-weight: 500;
   display: flex;
   justify-content: start;
 }
 
-.inquliryContent > textarea {
-  width: 85%;
+.textareaContent > textarea {
+  width: 73rem;
   height: 30rem;
   resize: none;
   outline: none;
   border: none;
   padding: 1rem;
-  background-color: #d9d9d9;
+  background-color: #f0f0f0;
 }
 
 .checkWrap {
-  width: 64rem;
+  width: 100%;
   padding-top: 1.2rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .checkContent {
-  width: 85%;
+  width: 73rem;
   display: flex;
   justify-content: space-between;
 }
@@ -216,7 +259,7 @@ input[type='checkbox'] {
 }
 
 .checkMainText {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   cursor: pointer;
   padding-left: 1rem;
@@ -228,59 +271,52 @@ input[type='checkbox'] {
 }
 
 .checkContent > span {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 500;
   cursor: pointer;
 }
 
 .submitWrap {
-  padding-top: 1.9rem;
-  width: 64rem;
+  width: 100%;
+  padding-top: 2.2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitBox {
+  width: 73rem;
   display: flex;
   justify-content: flex-end;
 }
 
 .submitBox > input {
-  width: 9rem;
+  width: 10rem;
   height: 3.3rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #d9d9d9;
+  background-color: #f0f0f0;
   color: black;
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 600;
 }
 
-@media screen and (max-width: 880px) {
-  .formBox {
+@media screen and (max-width: 1000px) {
+  .rightSection {
+    width: 90%;
+  }
+
+  .rightSectionTextWrap {
     width: 100%;
   }
 
-  .nameWrap {
+  .formWrap {
     width: 100%;
   }
 
-  .nameContent > label {
-    font-size: 1rem;
-  }
-
-  .emailWrap {
+  .inputTextWrap {
     width: 100%;
   }
-
-  .emailContent > label {
-    font-size: 1rem;
-  }
-
-  .inquliryWrap {
-    width: 100%;
-  }
-
-  .inquliryContent > label {
-    font-size: 1rem;
-  }
-
   .checkWrap {
     width: 100%;
     padding-top: 1%;
@@ -318,6 +354,20 @@ input[type='checkbox'] {
   }
 }
 
+@media screen and (max-width: 970px) {
+  .logo > img {
+    width: 20rem;
+  }
+
+  .logoSubText > div {
+    font-size: 3rem;
+  }
+
+  .subText {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .contentWrap {
     justify-content: center;
@@ -329,62 +379,26 @@ input[type='checkbox'] {
     height: 20%;
   }
 
+  .rightSection {
+    padding: 2rem;
+    height: 80%;
+  }
+
   .formWrap {
     width: 100%;
     height: 80%;
-    padding: 2rem;
-  }
-
-  .nameContent {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .nameContent > label {
-    width: 85%;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 2rem;
-    padding: 1rem;
-  }
-
-  .emailContent {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .emailContent > label {
-    width: 85%;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 2rem;
-    padding: 1rem;
-  }
-
-  .inquliryContent {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .inquliryContent > label {
-    width: 85%;
-    display: flex;
-    justify-content: flex-start;
-    font-size: 2rem;
-    padding: 1rem;
+    padding-top: 0;
   }
 
   .checkWrap {
     width: 100%;
     padding-top: 1%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .checkContent {
-    width: 85%;
+    width: 85.9%;
   }
 
   .checkContent > span {
@@ -399,11 +413,11 @@ input[type='checkbox'] {
     width: 100%;
     padding-top: 5%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
 
   .submitBox {
-    width: 85%;
+    width: 85.9%;
     display: flex;
     justify-content: center;
   }
@@ -412,5 +426,65 @@ input[type='checkbox'] {
     width: 10rem;
     height: 4rem;
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rightSectionBoxContainer {
+    width: 100%;
+  }
+
+  .rightSectionTextContent {
+    font-size: 2rem;
+  }
+
+  .formBox {
+    width: 100%;
+  }
+
+  .inputContainer {
+    width: 100%;
+  }
+
+  .inputTextContainer > input {
+    width: 100%;
+  }
+
+  .inputText {
+    font-size: 1rem;
+  }
+
+  .inputStar {
+    font-size: 1rem;
+  }
+
+  .textareaContent > textarea {
+    width: 100%;
+  }
+
+  .textareaContent > label {
+    font-size: 1rem;
+  }
+
+  .checkContent {
+    width: 92%;
+  }
+
+  .checkContent > span {
+    font-size: 1rem;
+  }
+
+  .checkLabel > span {
+    font-size: 1rem;
+  }
+
+  .submitBox {
+    width: 100%;
+  }
+
+  .submitBox > input {
+    width: 10%;
+    height: 100%;
+    font-size: 1rem;
   }
 }
