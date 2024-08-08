@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import styles from "./Policy.module.css";
 
-const Policy = () => {
+const Policy = (props:{setBlack:React.Dispatch<React.SetStateAction<boolean>>}) => {
+  useEffect(()=>{
+    props.setBlack(true);
+  },[])
   return (
     <div className={styles.container}>
       <div className={styles.title}>약관 및 정책</div>

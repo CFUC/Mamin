@@ -1,34 +1,19 @@
 import { useEffect, useState } from "react";
 import styles from "./navbar.module.css";
 import { HashLink } from "react-router-hash-link";
-export default function Navbar() {
-  const [black, setBlack] = useState(false);
-  const [scroll, setScroll] = useState(0);
-  useEffect(() => {
-    document.addEventListener("scroll", () => {
-      setScroll(window.scrollY);
-    });
-  }, []);
-
-  useEffect(() => {
-    if (scroll >= 400) {
-      setBlack(true);
-    } else {
-      setBlack(false);
-    }
-  }, [scroll]);
+export default function Navbar(props: { black: boolean }) {
   return (
     <div
       className={styles.main}
       style={{
-        background: `${black ? "#FFFFFF" : "none"}`,
-        borderBottom: `${black ? "1px solid #DDDDDD" : "none"}`,
+        background: `${props.black ? "#FFFFFF" : "none"}`,
+        borderBottom: `${props.black ? "1px solid #DDDDDD" : "none"}`,
       }}
     >
       <HashLink
         to="/#1"
         smooth
-        className={!black ? styles.logo : styles.logoBlack}
+        className={!props.black ? styles.logo : styles.logoBlack}
       ></HashLink>
       <div className={styles.listContainer}>
         <HashLink to="/#2" smooth>
