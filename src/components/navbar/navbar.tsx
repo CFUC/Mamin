@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import styles from "./navbar.module.css";
 import { HashLink } from "react-router-hash-link";
 export default function Navbar(props: { black: boolean }) {
