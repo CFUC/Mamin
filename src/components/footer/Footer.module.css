@@ -31,6 +31,8 @@
 .referenceText {
   font-size: 1.6rem;
   font-weight: 500;
+  color: white;
+  text-decoration: none;
 }
 
 .moreWrap {

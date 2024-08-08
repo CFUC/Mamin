@@ -8,7 +8,9 @@ const Policy = (props:{setBlack:React.Dispatch<React.SetStateAction<boolean>>}) 
   return (
     <div className={styles.container}>
       <div className={styles.title}>약관 및 정책</div>
-      <div className={styles.subTitle}>이용약관</div>
+      <div className={styles.subTitle} id="1">
+        이용약관
+      </div>
       <section className={styles.section}>
         <div>
           <div className={styles.listTitle}>제1조 목적</div>
@@ -383,7 +385,7 @@ const Policy = (props:{setBlack:React.Dispatch<React.SetStateAction<boolean>>}) 
         </div>
       </section>
 
-      <section className={styles.section}>
+      <section className={styles.section} id="2">
         <div className={styles.subTitle}>개인정보처리방침</div>
         <p>
           마케팅 민족은 본 개인정보처리방침은 개인정보보호법을 기준으로
@@ -700,7 +702,9 @@ const Policy = (props:{setBlack:React.Dispatch<React.SetStateAction<boolean>>}) 
           <p>이 약관은 &lt;사이트 개설일&gt;부터 시행합니다.</p>
         </div>
       </section>
-      <div className={styles.subTitle}>이메일무단수집거부</div>
+      <div className={styles.subTitle} id="3">
+        이메일무단수집거부
+      </div>
       <section className={styles.section}>
         <div>
           <div className={styles.listTitle}>
