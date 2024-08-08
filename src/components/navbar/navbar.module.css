@@ -1,95 +1,96 @@
-.main{
-    width: 100%;
-    height: 6%;
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 9999;
-    transition: 0.1s;
-    
+.main {
+  width: 100%;
+  height: 6%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
+  transition: 0.1s;
 }
-.mainContainer{
-    width: 100%;
-    height: 3%;
-    position: fixed;
-    top: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    z-index: 9999;
-}
-
-.logo{
-    width: 10%;
-    height: 3rem;
-    background-image: url('../../../public/images/마케팅\ 민족.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: pointer;
-    transition: 0.1s;
-}
-.logoBlack{
-    width: 10%;
-    height: 2.5rem;
-    background-image: url('../../../public/images/마케팅\ 민족black.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    cursor: pointer;
-    transition: 0.1s;
-}
-.listContainer{
-    width: 20%;
-    display: flex;
+.mainContainer {
+  width: 100%;
+  height: 3%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 9999;
 }
 
-.listContainer a{
-    display: block;
-    margin-left: 5%;
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 1.6rem;
+.logo {
+  width: 10%;
+  height: 3rem;
+  background-image: url("../../../public/images/마케팅\ 민족.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.1s;
 }
-.listContainer a label{
-    white-space: nowrap;
-    cursor: pointer;
+.logoBlack {
+  width: 10%;
+  height: 2.5rem;
+  background-image: url("../../../public/images/마케팅\ 민족black.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.listContainer {
+  width: 20%;
+  display: flex;
+}
+
+.listContainer a {
+  display: block;
+  margin-left: 5%;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: black;
+  text-decoration: none;
+}
+.listContainer a label {
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 590px) {
-    .listContainer{
-        width: 30%;
-    }
-    .logo{
-        width: 12%;
-    }
-    .logoBlack{
-        width: 12%;
-    }
+  .listContainer {
+    width: 30%;
+  }
+  .logo {
+    width: 12%;
+  }
+  .logoBlack {
+    width: 12%;
+  }
 }
 
 @media screen and (max-width: 370px) {
-    .logo{
-        width: 15%;
-    }
-    .logoBlack{
-        width: 15%;
-    }
-    .listContainer{
-        width: 40%;
-    }
+  .logo {
+    width: 15%;
+  }
+  .logoBlack {
+    width: 15%;
+  }
+  .listContainer {
+    width: 40%;
+  }
 }
 
 @media screen and (max-width: 330px) {
-    .logo{
-        width: 18%;
-    }
-    .logoBlack{
-        width: 18%;
-    }
-    .listContainer{
-        width: 45%;
-    }
+  .logo {
+    width: 18%;
+  }
+  .logoBlack {
+    width: 18%;
+  }
+  .listContainer {
+    width: 45%;
+  }
 }
