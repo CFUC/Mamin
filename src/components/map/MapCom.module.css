@@ -26,10 +26,23 @@
 }
 
 .textBox {
-  width: 45rem;
+  width: 43rem;
+  margin-right: 7.8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.leftTextWrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.rightTextWrap {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .textContent {
@@ -44,7 +57,7 @@
 }
 
 .subTextBox {
-  width: 45rem;
+  width: 36.5rem;
   height: 14.5rem;
   display: flex;
   flex-direction: column;
@@ -59,21 +72,21 @@
 }
 
 .iconBox {
-  width: 15%;
+  width: 13%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .subTextContent {
-  width: 85%;
+  width: 87%;
   display: flex;
   align-items: center;
 }
 
 .telIconBox {
   width: 2.8rem;
-  height: 2.8rem;
+  height: 2.7rem;
 }
 
 .messageIconBox {
@@ -139,9 +152,15 @@
   }
 
   .textContent {
-    width: 80%;
+    width: 100%;
     justify-content: center;
     align-items: center;
+  }
+
+  .rightTextWrap {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
   }
 
   .mainText {
@@ -159,11 +178,22 @@
 
   .subTextContainer {
     width: 100%;
+    height: 5rem;
   }
 
   .mapWrap {
     width: 100%;
     height: 65%;
     padding-top: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subTextContent {
+    justify-content: center;
+  }
+
+  .subText {
+    font-size: 1rem;
   }
 }

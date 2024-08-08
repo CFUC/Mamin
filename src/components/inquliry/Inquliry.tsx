@@ -15,16 +15,10 @@ const Inquliry = () => {
       return alert('성함을 입력해주세요');
     }
     if (!phoneNumber) {
-      return alert('전화번호를 입력해주세요');
+      return alert('연락처를 입력해주세요');
     }
     if (!email) {
       return alert('이메일을 입력해주세요');
-    }
-    if (!company) {
-      return alert('회사명 또는 직급을 입력해주세요');
-    }
-    if (!message) {
-      return alert('문의내용을 입력해주세요');
     }
     if (!checking) {
       return alert('개인정보 처리방침에 동의해주세요');
@@ -63,25 +57,25 @@ const Inquliry = () => {
               <div className={styles.logo}>
                 <img src="/images/logo.svg" alt="logo" />
                 <div className={styles.logoSubText}>
-                  <div>광고주세요?</div>
+                  <div>과 함께</div>
                 </div>
               </div>
             </div>
-            <div className={styles.subText}>
-              저희가 성공을 위해 함께하겠습니다.
-            </div>
+            <div className={styles.subText}>더 나은 미래를 준비해 보세요!</div>
           </div>
         </div>
         <div className={styles.rightSection}>
           <div className={styles.rightSectionTextWrap}>
-            <div className={styles.rightSectionTextContainer}>
-              <div className={styles.rightSectionTextContent}>
-                마케팅 견적이 궁금하다면?
+            <div className={styles.rightSectionBoxContainer}>
+              <div className={styles.rightSectionTextContainer}>
+                <div className={styles.rightSectionTextContent}>
+                  마케팅 견적이 궁금하다면?
+                </div>
               </div>
-            </div>
-            <div className={styles.rightSectionSubTextContainer}>
-              <div className={styles.rightSectionsubTextContent}>
-                <span>*</span>표시는 필수입력 항목입니다
+              <div className={styles.rightSectionSubTextContainer}>
+                <div className={styles.rightSectionsubTextContent}>
+                  <span>*</span>표시는 필수입력 항목입니다
+                </div>
               </div>
             </div>
           </div>
@@ -142,7 +136,7 @@ const Inquliry = () => {
                           type="text"
                           value={email}
                           onChange={(e) => {
-                            setname(e.target.value);
+                            setEmail(e.target.value);
                           }}
                         />
                       </div>
@@ -160,7 +154,7 @@ const Inquliry = () => {
                           type="text"
                           value={company}
                           onChange={(e) => {
-                            setPhoneNumber(e.target.value);
+                            setCompany(e.target.value);
                           }}
                         />
                       </div>
@@ -194,7 +188,7 @@ const Inquliry = () => {
                         개인정보 처리방침에 동의합니다.
                       </span>
                     </label>
-                    <span>자세히보기</span>
+                    <span>자세히 보기</span>
                   </div>
                 </div>
                 <div className={styles.submitWrap}>
