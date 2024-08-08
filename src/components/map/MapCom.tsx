@@ -18,11 +18,13 @@ const MapCom = () => {
                 <div className={styles.subTextBox}>
                   <div className={styles.subTextContainer}>
                     <div className={styles.iconBox}>
-                      <img
-                        src="/images/telIcon.png"
-                        className={styles.telIconBox}
-                        alt="tel"
-                      />
+                      <div className={styles.iconContainer}>
+                        <img
+                          src="/images/telIcon.png"
+                          className={styles.telIconBox}
+                          alt="tel"
+                        />
+                      </div>
                     </div>
                     <div className={styles.subTextContent}>
                       <div className={styles.subText}>1522-3769</div>
@@ -30,11 +32,13 @@ const MapCom = () => {
                   </div>
                   <div className={styles.subTextContainer}>
                     <div className={styles.iconBox}>
-                      <img
-                        src="/images/messageIcon.png"
-                        className={styles.messageIconBox}
-                        alt="tel"
-                      />
+                      <div className={styles.iconContainer}>
+                        <img
+                          src="/images/messageIcon.png"
+                          className={styles.messageIconBox}
+                          alt="tel"
+                        />
+                      </div>
                     </div>
                     <div className={styles.subTextContent}>
                       <div className={styles.subText}>help@cashcarplus.com</div>
@@ -42,11 +46,13 @@ const MapCom = () => {
                   </div>
                   <div className={styles.subTextContainer}>
                     <div className={styles.iconBox}>
-                      <img
-                        src="/images/markerIcon.png"
-                        className={styles.markerIconBox}
-                        alt="tel"
-                      />
+                      <div className={styles.iconContainer}>
+                        <img
+                          src="/images/markerIcon.png"
+                          className={styles.markerIconBox}
+                          alt="tel"
+                        />
+                      </div>
                     </div>
                     <div className={styles.subTextContent}>
                       <div className={styles.subText}>
