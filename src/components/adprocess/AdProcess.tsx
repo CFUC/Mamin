@@ -50,7 +50,12 @@ const AdProcess = () => {
                 size={service.size}
               />
               {arr.length - 1 !== idx && (
-                <img src="images/arrowIcon.png" className={styles.arrowIcon} />
+                <img
+                  src="images/arrowIcon.png"
+                  className={styles.arrowIcon}
+                  data-aos="fade-up"
+                  data-aos-delay={300 * (service.id - 1)}
+                />
               )}
             </>
           ))}

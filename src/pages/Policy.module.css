@@ -1,0 +1,80 @@
+.container {
+  padding: 10rem 22.9rem;
+  background-color: white;
+}
+
+.title {
+  font-size: 6.4rem;
+  font-weight: 600;
+}
+
+.subTitle {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 4.3rem;
+  color: rgba(58, 132, 196, 1);
+}
+
+.section {
+  font-size: 2rem;
+  margin-top: 5.1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.listTitle {
+  font-weight: 600;
+}
+
+.container ul {
+  list-style: none;
+}
+
+.conatiner ul,
+.container ol {
+  padding-left: 2.2rem;
+}
+
+.container ol[data-list-style-type="cc"] > li:nth-child(1)::marker {
+  content: "① ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(2)::marker {
+  content: "② ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(3)::marker {
+  content: "③ ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(4)::marker {
+  content: "④ ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(5)::marker {
+  content: "⑤ ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(6)::marker {
+  content: "⑥ ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(7)::marker {
+  content: "⑦ ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(8)::marker {
+  content: "⑧ ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(9)::marker {
+  content: "⑨ ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(10)::marker {
+  content: "⑩ ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(11)::marker {
+  content: "⑪ ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(12)::marker {
+  content: "⑫ ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(13)::marker {
+  content: "⑬ ";
+}
+.container ol[data-list-style-type="cc"] > li:nth-child(14)::marker {
+  content: "⑭ ";
+}
