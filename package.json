@@ -19,6 +19,7 @@
     "react-helmet-async": "^2.0.5",
     "react-kakao-maps-sdk": "^1.1.27",
     "react-router-dom": "^6.26.0",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
     "swiper": "^11.1.9",
@@ -48,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-router-hash-link": "^2.4.9"
   }
 }

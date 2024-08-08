@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -11,15 +11,15 @@ const Footer = () => {
       </div>
       <div className={styles.contentWrap}>
         <div className={styles.referenceWrap}>
-          <a href="/policy#1" className={styles.referenceText}>
+          <HashLink to="/policy#policy2" className={styles.referenceText}>
             개인정보처리방침
-          </a>
-          <a href="/policy#2" className={styles.referenceText}>
+          </HashLink>
+          <HashLink to="/policy#policy1" className={styles.referenceText}>
             이용약관
-          </a>
-          <a href="/policy#3" className={styles.referenceText}>
+          </HashLink>
+          <HashLink to="/policy#policy3" className={styles.referenceText}>
             이메일수집거부
-          </a>
+          </HashLink>
         </div>
         <div className={styles.moreWrap}>
           <div className={styles.ceoNumWrap}>
