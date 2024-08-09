@@ -1,6 +1,6 @@
 .mainWrap {
   width: 100%;
-  height: 100rem;
+  height: 100vh;
   background-color: #3a84c4;
 }
 
@@ -69,8 +69,6 @@
   flex-direction: column;
   justify-content: center;
 }
-
-/* formWrap ==  rightSectionTextWrap*/
 
 .rightSectionTextWrap {
   width: 85rem;
@@ -165,6 +163,7 @@
   outline: none;
   padding: 1rem;
   background-color: #f0f0f0;
+  font-size: 1.6rem;
 }
 
 .inputTextBox {
@@ -256,7 +255,7 @@ input[type='checkbox'] {
 
 .checkLabel input:checked + .checkIcon::before {
   background: url(/public/images/checkIcon.png) center;
-  background-size: 1.6rem 1.6rem;
+  background-size: 1.8rem 1.8rem;
   background-repeat: no-repeat;
 }
 
@@ -301,6 +300,12 @@ input[type='checkbox'] {
   color: black;
   font-size: 2.2rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1550px) {
+  .formWrap {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -386,7 +391,7 @@ input[type='checkbox'] {
   .formWrap {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     height: 78%;
     padding-top: 0;
   }
@@ -432,6 +437,7 @@ input[type='checkbox'] {
 
   .inputTextContainer > input {
     width: 80%;
+    font-size: 1rem;
   }
 
   .rightSection {
