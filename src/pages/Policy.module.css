@@ -1,5 +1,5 @@
 .container {
-  padding: 5%;
+  padding: 8vh 5%;
   background-color: white;
 }
 
@@ -12,7 +12,7 @@
   font-size: 4rem;
   font-weight: 700;
   margin-top: 4.3rem;
-  color: rgba(58, 132, 196, 1);
+  color: #38a770;
 }
 
 .section {
