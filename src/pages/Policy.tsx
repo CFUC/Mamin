@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import styles from "./Policy.module.css";
 
-const Policy = (props:{setBlack:React.Dispatch<React.SetStateAction<boolean>>}) => {
-  useEffect(()=>{
+const Policy = (props: {
+  setBlack: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
+  useEffect(() => {
     props.setBlack(true);
-  },[])
+  }, []);
   return (
     <div className={styles.container}>
       <div className={styles.title}>약관 및 정책</div>
@@ -649,7 +651,10 @@ const Policy = (props:{setBlack:React.Dispatch<React.SetStateAction<boolean>>}) 
           </p>
           <br />
           <p>개인정보관리책임자: 임미덥</p>
-          <p>전화번호: 1522-3769 (평일 : 오전 9:00 ~ 오후 6:00 까지)</p>
+          <p>
+            전화번호: <a href="tel:1522-3769">1522-3769</a> (평일 : 오전 9:00 ~
+            오후 6:00 까지)
+          </p>
           <p>
             이메일:{" "}
             <a href="mailto:help@cashcarplus.com">help@cashcarplus.com</a>
@@ -661,25 +666,23 @@ const Policy = (props:{setBlack:React.Dispatch<React.SetStateAction<boolean>>}) 
           <ol>
             <li>
               개인분쟁조정위원회 (
-              <a href="http://www.1336.or.kr">www.1336.or.kr / 1336</a>)
+              <a href="http://www.1336.or.kr">www.1336.or.kr</a> /{" "}
+              <a href="tel:1336">1336</a>)
             </li>
             <li>
               정보보호마크인증위원회 (
-              <a href="http://www.eprivacy.or.kr">
-                www.eprivacy.or.kr / 02-580-0533~4
-              </a>
-              )
+              <a href="http://www.eprivacy.or.kr">www.eprivacy.or.kr</a> /{" "}
+              <a href="tel:02-580-0533">02-580-0533~4</a>)
             </li>
             <li>
               대검찰청 인터넷범죄수사센터 (
-              <a href="http://icic.sppo.go.kr">
-                http://icic.sppo.go.kr / 02-3480-3600
-              </a>
-              )
+              <a href="http://icic.sppo.go.kr">http://icic.sppo.go.kr</a> /{" "}
+              <a href="tel:02-3480-3600">02-3480-3600</a>)
             </li>
             <li>
               경찰청 사이버테러대응센터 (
-              <a href="http://www.ctrc.go.kr">www.ctrc.go.kr / 02-392-0330</a>)
+              <a href="http://www.ctrc.go.kr">www.ctrc.go.kr</a> /{" "}
+              <a href="tel:02-392-0330">02-392-0330</a>)
             </li>
           </ol>
         </div>
