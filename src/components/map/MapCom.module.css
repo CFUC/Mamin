@@ -121,6 +121,12 @@
   background-color: #d9d9d9;
 }
 
+@media screen and (max-width: 1550px) {
+  .mapBox {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .mapWrap {
     display: flex;
