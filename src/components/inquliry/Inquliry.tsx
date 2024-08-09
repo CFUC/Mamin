@@ -28,6 +28,8 @@ const Inquliry = () => {
       .post('/email/send', {
         name,
         phoneNumber,
+        email,
+        company,
         message,
       })
       .then((res) => {
@@ -49,7 +51,7 @@ const Inquliry = () => {
   };
 
   return (
-    <div className={styles.mainWrap} id='5'>
+    <div className={styles.mainWrap} id="5">
       <div className={styles.contentWrap}>
         <div className={styles.textWrap}>
           <div className={styles.textBox}>
@@ -65,23 +67,23 @@ const Inquliry = () => {
           </div>
         </div>
         <div className={styles.rightSection}>
-          <div className={styles.rightSectionTextWrap}>
-            <div className={styles.rightSectionBoxContainer}>
-              <div className={styles.rightSectionTextContainer}>
-                <div className={styles.rightSectionTextContent}>
-                  마케팅 견적이 궁금하다면?
+          <div className={styles.formWrap}>
+            <div className={styles.rightSectionTextWrap}>
+              <div className={styles.rightSectionBoxContainer}>
+                <div className={styles.rightSectionTextContainer}>
+                  <div className={styles.rightSectionTextContent}>
+                    마케팅 견적이 궁금하다면?
+                  </div>
                 </div>
-              </div>
-              <div className={styles.rightSectionSubTextContainer}>
-                <div className={styles.rightSectionsubTextContent}>
-                  <span>*</span>표시는 필수입력 항목입니다
+                <div className={styles.rightSectionSubTextContainer}>
+                  <div className={styles.rightSectionsubTextContent}>
+                    <span>*</span>표시는 필수입력 항목입니다
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={styles.formWrap}>
-            <form onSubmit={sendEmail}>
-              <div className={styles.formBox}>
+            <div className={styles.formBox}>
+              <form onSubmit={sendEmail}>
                 <div className={styles.inputWrap}>
                   <div className={styles.inputContainer}>
                     <div className={styles.inputTextWrap}>
@@ -196,8 +198,8 @@ const Inquliry = () => {
                     <input type="submit" value="문의하기" />
                   </div>
                 </div>
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>
