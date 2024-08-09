@@ -1,11 +1,12 @@
 .container {
-  padding: 8vh 5%;
+  padding: 6vh 12%;
   background-color: white;
 }
 
 .title {
   font-size: 6.4rem;
   font-weight: 600;
+  margin-top: 10rem;
 }
 
 .subTitle {
@@ -17,10 +18,14 @@
 
 .section {
   font-size: 2rem;
-  margin-top: 5.1rem;
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+  line-height: 2.387rem;
+}
+
+.section:not(:nth-of-type(1)) {
+  margin-top: 5.1rem;
 }
 
 .section::before {
