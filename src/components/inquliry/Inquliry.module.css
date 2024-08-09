@@ -201,7 +201,7 @@
 
 .textareaContent > textarea {
   width: 73rem;
-  height: 30rem;
+  height: 100%;
   resize: none;
   outline: none;
   border: none;
