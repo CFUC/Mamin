@@ -1,6 +1,8 @@
 .modalWrap {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -46,15 +48,9 @@
 .mainTextContainer {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.textContent {
-  max-width: 100rem;
-  max-height: 64.8rem;
+  overflow: auto;
   font-size: 2rem;
+  padding: 3rem 2rem;
 }
 
 .titleContent {
@@ -91,8 +87,6 @@ li {
   }
   .mainTextContainer {
     width: 100%;
-    display: flex;
-    justify-content: center;
   }
 
   .textContent {
