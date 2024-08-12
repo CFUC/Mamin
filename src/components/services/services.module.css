@@ -121,3 +121,10 @@
         aspect-ratio: 1/0.8;
     }
 }
+
+
+@media screen and (max-height: 750px) {
+    .container{
+        height: 130vh;
+    }
+}
