@@ -4,9 +4,8 @@
 
 .inner {
   width: 100%;
-  max-width: 135.6rem;
+  max-width: 147.7rem;
   margin: 0 auto;
-  /* box-shadow: inset 0px 0px 10px 10px black; */
 }
 
 .adList {
@@ -24,10 +23,6 @@
 }
 
 @media (max-width: 670px) {
-  .adList {
-    padding: 0 0;
-  }
-
   .adElement {
     width: 18rem;
   }

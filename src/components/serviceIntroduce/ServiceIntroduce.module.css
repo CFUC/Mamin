@@ -1,7 +1,7 @@
 .section {
   width: 100%;
-  padding: 14.8rem 0;
-  background: rgba(58, 132, 196, 1);
+  padding: 13.9rem 0;
+  background: #38a770;
 }
 
 .inner {
@@ -12,8 +12,9 @@
 
 .title {
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 4.2rem;
   color: white;
+  margin-left: 2.9rem;
 }
 
 .serviceContainer {
@@ -21,7 +22,7 @@
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: auto;
-  column-gap: 13rem;
+  column-gap: 4rem;
   row-gap: 11.9rem;
 }
 

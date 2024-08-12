@@ -1,33 +1,30 @@
 .mainWrap {
   width: 100%;
-  height: 100rem;
+  height: 100vh;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contnetWrap {
   width: 100%;
+  max-width: 134.2rem;
   height: 100%;
+  max-height: 50.8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.mainContent {
-  width: 100%;
-  height: 57rem;
-  display: flex;
-}
-
 .textWrap {
-  width: 40%;
-  height: 57rem;
+  height: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .textBox {
-  width: 43rem;
-  margin-right: 7.8rem;
+  width: 53.8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,11 +39,7 @@
 .rightTextWrap {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
-}
-
-.textContent {
-  width: 60%;
+  justify-content: flex-start;
 }
 
 .mainText {
@@ -57,7 +50,7 @@
 }
 
 .subTextBox {
-  width: 36.5rem;
+  width: 100%;
   height: 14.5rem;
   display: flex;
   flex-direction: column;
@@ -72,7 +65,7 @@
 }
 
 .iconBox {
-  width: 13%;
+  width: 12%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -85,8 +78,9 @@
 }
 
 .subTextContent {
-  width: 87%;
+  width: 88%;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -106,19 +100,28 @@
 }
 
 .subText {
-  font-size: 1.6rem;
+  width: 100%;
+  font-size: 2.4rem;
   font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .mapWrap {
-  width: 60%;
-  height: 57rem;
+  width: 72.7rem;
+  height: 100%;
 }
 
 .mapBox {
-  width: 93rem;
-  height: 57rem;
+  width: 100%;
+  height: 100%;
   background-color: #d9d9d9;
+}
+
+@media screen and (max-width: 1550px) {
+  .mapBox {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1000px) {

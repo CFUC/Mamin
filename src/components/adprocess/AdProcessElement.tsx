@@ -12,34 +12,19 @@ const AdProcessElement = ({
   id: number;
   size: number;
 }) => {
-  const [colorSize, setColorSize] = useState<number>(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      console.log(colorSize);
-      setColorSize(colorSize + size / 500);
-    }, 1);
-
-    setTimeout(() => {
-      setColorSize(size);
-
-      clearInterval(interval);
-    }, 500);
-  }, []);
-
   return (
     <div
       className={styles.container}
       data-aos="fade-up"
       data-aos-delay={100 * (id - 1)}
     >
-      <div className={styles.step}>STEP{id < 10 ? `0${id}` : id}</div>
+      <div className={styles.step}>STEP {id < 10 ? `0${id}` : id}</div>
       <div
         className={styles.iconConatiner}
         style={{
           background: `conic-gradient(white 0deg ${
             360 - size - 1
-          }deg, rgba(58, 132, 196, 1) ${360 - size}deg 360deg)`,
+          }deg, #38a770 ${360 - size}deg 360deg)`,
         }}
       >
         <div className={styles.whiteDiv}>

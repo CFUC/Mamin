@@ -1,5 +1,5 @@
-import { HashLink } from "react-router-hash-link";
-import styles from "./Footer.module.css";
+import { HashLink } from 'react-router-hash-link';
+import styles from './Footer.module.css';
 
 const Footer = () => {
   return (

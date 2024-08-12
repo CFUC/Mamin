@@ -6,21 +6,29 @@
 
 .inner {
   width: 100%;
-  max-width: 144.2rem;
+  max-width: 134.2rem;
   margin: 0 auto;
 }
 
 .title {
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 4.2rem;
 }
 
 .portfolioContainer {
-  margin-top: 17.3rem;
+  margin-top: 11rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 4.6rem;
   row-gap: 3.9rem;
+}
+
+.portfolioContainer div:nth-child(n + 4):nth-child(-n + 6) {
+  border: 0.3rem solid #ffbb00;
+}
+
+.portfolioContainer div:nth-child(n + 10):nth-child(-n + 12) {
+  border: 0.3rem solid #ffbb00;
 }
 
 @media (max-width: 950px) {
@@ -38,6 +46,30 @@
   .portfolioContainer {
     grid-template-columns: repeat(2, auto);
     margin-top: 10rem;
+  }
+
+  .portfolioContainer div:nth-child(n + 4):nth-child(-n + 6) {
+    border: 0.3rem solid #38a770;
+  }
+
+  .portfolioContainer div:nth-child(n + 10):nth-child(-n + 12) {
+    border: 0.3rem solid #38a770;
+  }
+
+  .portfolioContainer div:nth-child(n + 3):nth-child(-n + 4) {
+    border: 0.3rem solid #ffbb00;
+  }
+
+  .portfolioContainer div:nth-child(n + 7):nth-child(-n + 8) {
+    border: 0.3rem solid #ffbb00;
+  }
+
+  .portfolioContainer div:nth-child(n + 11):nth-child(-n + 12) {
+    border: 0.3rem solid #ffbb00;
+  }
+
+  .portfolioContainer div:nth-child(n + 15):nth-child(-n + 16) {
+    border: 0.3rem solid #ffbb00;
   }
 }
 

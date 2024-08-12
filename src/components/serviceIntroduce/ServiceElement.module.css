@@ -5,16 +5,16 @@
 
 .title {
   color: white;
-  margin-top: 1.5rem;
-  font-weight: 600;
+  margin-top: 3.1rem;
+  font-weight: 500;
   font-size: 3rem;
 }
 
 .content {
   color: white;
   font-weight: 300;
-  font-size: 2rem;
-  margin-top: 3.6rem;
+  font-size: 2.4rem;
+  margin-top: 1.4rem;
   white-space: pre-wrap;
   line-height: 3.3rem;
 }

@@ -2,7 +2,7 @@
   width: 100%;
   height: 22.6rem;
   background-color: #000;
-  color: #fff;
+  color: #d3d3d3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,7 @@
 }
 
 .contentWrap {
-  width: 70%;
+  width: 57%;
   height: 14.4rem;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
   flex-direction: column;
   justify-content: space-between;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .ceoNumWrap {
@@ -71,6 +71,7 @@
 .companyWrap {
   width: 100%;
   display: flex;
+  font-weight: 400;
 }
 
 .companyText {
@@ -98,6 +99,9 @@
     flex-direction: column;
     justify-content: space-around;
     padding-left: 0;
+  }
+  .referenceWrap {
+    width: 100%;
   }
 
   .logoBox > img {

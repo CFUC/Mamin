@@ -1,129 +1,160 @@
 .mainWrap {
   width: 100%;
-  height: 100rem;
-  background-color: #3a84c4;
+  height: 100vh;
+  background-color: #ffbb00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contentWrap {
   width: 100%;
+  max-width: 134.3rem;
+  height: 100%;
+  max-height: 62.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSection {
   height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commentWrap {
+  width: 37.7rem;
+  height: 16.5rem;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
-.textWrap {
-  width: 45%;
-  height: 100%;
+.logoCommentBox {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+}
+
+.logoBox {
+  width: 27.5rem;
+  height: 4.9rem;
+}
+
+.logoBox > img {
+  width: 100%;
+  height: 100%;
+}
+
+.logoCommentTextBox {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logoCommentTextBox > div {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1;
+}
+
+.subCommentBox {
+  width: 100%;
+}
+
+.subCommentBox > div {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.downloadCommentBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.downloadWrap {
+  width: 29.7rem;
+  height: 5rem;
+  display: flex;
+  background-color: #fff;
+  border-radius: 0.5rem;
   justify-content: center;
   align-items: center;
 }
 
-.mainText {
-  width: auto;
-  color: white;
+.downloadContentWrap {
+  width: 26.1rem;
+  height: 2.5rem;
   display: flex;
-  justify-content: start;
-}
-
-.logo {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.logo > img {
-  width: 30rem;
-  height: 5.5rem;
-}
-
-.logoSubText {
-  height: 5.5rem;
-  padding-left: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.logoSubText > div {
-  height: 5rem;
-  line-height: 6rem;
-  font-size: 4.2rem;
+.downloadText > div {
+  font-size: 2rem;
   font-weight: 600;
+  color: #ffbb00;
 }
 
-.subText {
-  width: auto;
-  font-size: 4.2rem;
-  font-weight: 600;
-  color: white;
-  display: flex;
-  justify-content: start;
-  padding-top: 0.4rem;
+.downloadIcon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.downloadIcon > img {
+  width: 100%;
+  height: 100%;
 }
 
 .rightSection {
-  width: 55%;
   height: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.rigthSectionContentWrap {
+  width: 87.1rem;
+  height: 62.7rem;
 }
 
-/* formWrap ==  rightSectionTextWrap*/
+.maTextWrap {
+  width: 100%;
+  height: 8.5rem;
+  display: flex;
+}
 
-.rightSectionTextWrap {
-  width: 85rem;
-  height: 10rem;
+.maMainTextWrap {
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.formWrap {
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.maMainTextContent > div {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 600;
 }
-.rightSectionBoxContainer {
-  width: 85rem;
+
+.maSubTextWrap {
+  width: 50%;
   height: 100%;
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.formBox {
-  width: 85rem;
-  padding-top: 1.3rem;
-}
-
-.rightSectionTextContainer {
-  width: 60%;
-}
-
-.rightSectionTextContent {
-  font-size: 4rem;
-  font-weight: 600;
+.maSubtextContent > div {
   color: #fff;
-}
-
-.rightSectionSubTextContainer {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.rightSectionsubTextContent {
-  display: flex;
-  justify-content: flex-end;
   font-size: 1.6rem;
   font-weight: 600;
-  color: #fff;
 }
 
-.rightSectionsubTextContent > span {
+.maSubtextContent > div > span {
   color: #ff5757;
 }
 
@@ -131,120 +162,160 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-bottom: 3.4rem;
+  padding-top: 1.5rem;
 }
 
 .inputContainer {
-  width: 39rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.inputTextWrap {
-  width: 100%;
+.inputLeftSectionWrap {
+  width: 38.9rem;
+  height: 10.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
-.inputTextContainer {
-  width: 100%;
+.inputRigthSectionWrap {
+  width: 43rem;
+  height: 10.4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.inputNameContentWrap {
+  width: 37rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.inputTextContainer > label {
-  height: 3.1rem;
-  font-size: 2.4rem;
-  font-weight: 600;
+.inputTelContentWrap {
+  width: 38.9rem;
   display: flex;
-  justify-content: start;
-}
-
-.inputTextContainer > input {
-  width: 27.1rem;
-  height: 3.5rem;
-  border: none;
-  outline: none;
-  padding: 1rem;
-  background-color: #f0f0f0;
-}
-
-.inputTextBox {
-  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-.inputText {
-  height: 2.4rem;
+.inputEmailContentWrap {
+  width: 39rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.inputStar {
-  height: 100%;
+.inputCompanyContentWrap {
+  width: 43rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lableBox {
+  height: 3.5rem;
+}
+
+.lableBox > div {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 4rem;
+  color: #fff;
+  display: flex;
+}
+
+.lableBox > div > span {
   color: #ff5757;
+  line-height: 1;
+}
+
+.inputBox {
+  width: 27.1rem;
+  height: 3.5rem;
+}
+
+.inputBox > input {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: #f0f0f0;
 }
 
 .textareaWrap {
   width: 100%;
-  margin-top: -0.4rem;
-}
-
-.textareaContent {
-  width: 100%;
   display: flex;
   justify-content: space-between;
+  padding-top: 3.4rem;
+}
+
+.textareaBox {
+  width: 75.2rem;
+  height: 30rem;
+}
+
+.textareaLableBox {
+  display: flex;
   align-items: center;
 }
 
-.textareaContent > label {
+.textareaLableBox > div {
   font-size: 2.4rem;
-  font-weight: 500;
-  display: flex;
-  justify-content: start;
+  font-weight: 600;
+  line-height: 4rem;
+  color: #fff;
 }
 
-.textareaContent > textarea {
-  width: 73rem;
-  height: 30rem;
-  resize: none;
-  outline: none;
-  border: none;
-  padding: 1rem;
-  background-color: #f0f0f0;
-}
-
-.checkWrap {
+.textareaBox > textarea {
   width: 100%;
-  padding-top: 1.2rem;
+  height: 100%;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: #f0f0f0;
+  resize: none;
+}
+
+.checkboxWrap {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
+  padding-top: 1.1rem;
 }
 
-.checkContent {
-  width: 73rem;
+.checboxContainer {
+  width: 75.2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 input[type='checkbox'] {
   display: none;
-  content: '';
 }
 
-.checkLabel {
+.checkboxInputBox > label {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
-.checkIcon {
+.checkboxIcon {
   width: 1.8rem;
   height: 1.8rem;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
-.checkIcon::before {
+.checkboxIcon::before {
   content: '';
   display: block;
-  display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
   background-color: transparent;
@@ -254,53 +325,72 @@ input[type='checkbox'] {
   cursor: pointer;
 }
 
-.checkLabel input:checked + .checkIcon::before {
-  background: url(/public/images/checkIcon.png) center;
-  background-size: 1.6rem 1.6rem;
-  background-repeat: no-repeat;
+input[type='checkbox']:checked + .checkboxIcon::before {
+  background-color: transparent;
 }
 
-.checkMainText {
+input[type='checkbox']:checked + .checkboxIcon::after {
+  content: '';
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: url(/public/images/checkIcon.png) center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.checkboxText {
+  color: #fff;
   font-size: 1.8rem;
   font-weight: 500;
   cursor: pointer;
   padding-left: 1rem;
 }
 
-.checkContent {
-  display: flex;
-  align-items: center;
-}
-
-.checkContent > span {
+.checkboxSubTextBox > div {
+  color: #fff;
   font-size: 1.8rem;
   font-weight: 500;
   cursor: pointer;
 }
 
 .submitWrap {
+  display: flex;
   width: 100%;
-  padding-top: 2.2rem;
-  display: flex;
   justify-content: flex-end;
+  padding-top: 2.6rem;
 }
 
-.submitBox {
-  width: 73rem;
+.submitContentWrap {
+  width: 23.6rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.submitBox > input {
-  width: 10rem;
+/* .uploadContent {
+  width: 10.8rem;
   height: 3.3rem;
   border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #f0f0f0;
-  color: black;
+  border-radius: 0.5rem;
+  background-color: #38a770;
+} */
+
+.submitContent {
+  width: 10.8rem;
+  height: 3.3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #38a770;
+  color: #fff;
   font-size: 2.2rem;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1550px) {
+  .formWrap {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -432,6 +522,7 @@ input[type='checkbox'] {
 
   .inputTextContainer > input {
     width: 80%;
+    font-size: 1rem;
   }
 
   .rightSection {
@@ -474,6 +565,7 @@ input[type='checkbox'] {
 
   .checkWrap {
     width: 100%;
+    height: 100%;
     padding-top: 1%;
     display: flex;
     justify-content: center;
