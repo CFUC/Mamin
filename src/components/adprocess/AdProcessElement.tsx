@@ -12,6 +12,30 @@ const AdProcessElement = ({
   id: number;
   size: number;
 }) => {
+  const [pSize, setPSize] = useState<number>(0);
+
+  useEffect(() => {
+    const sizeUp = setInterval(() => {
+      setPSize((prev) => {
+        if (prev >= size) {
+          clearInterval(sizeUp);
+
+          return prev;
+        }
+
+        if (prev <= Math.floor(size * 0.4)) {
+          return prev + 2;
+        }
+
+        if (prev >= Math.floor(size * 0.85)) {
+          return prev + 0.9;
+        }
+
+        return prev + 1;
+      });
+    }, 8);
+  }, []);
+
   return (
     <div
       className={styles.container}
@@ -23,8 +47,8 @@ const AdProcessElement = ({
         className={styles.iconConatiner}
         style={{
           background: `conic-gradient(white 0deg ${
-            360 - size - 1
-          }deg, #38a770 ${360 - size}deg 360deg)`,
+            360 - pSize - 1
+          }deg, #38a770 ${360 - pSize}deg 360deg)`,
         }}
       >
         <div className={styles.whiteDiv}>
