@@ -103,7 +103,7 @@ const Inquliry = () => {
                 <div className={styles.downloadContentWrap}>
                   <div className={styles.downloadText}>
                     <div>
-                      <a href="/download/마케팅 민족 개발 보고서.pdf" download>
+                      <a href="" download>
                         캐시카플러스 소개서 다운로드
                       </a>
                     </div>
