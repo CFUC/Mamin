@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import ServiceElement from "./ServiceElement";
 import styles from "./ServiceIntroduce.module.css";
 
