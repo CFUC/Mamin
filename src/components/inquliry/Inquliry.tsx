@@ -3,6 +3,8 @@ import styles from './Inquliry.module.css';
 import Modal from 'react-modal';
 import { useState } from 'react';
 import PopupModal from './PopupModal';
+import { useMediaQuery } from 'react-responsive';
+
 const Inquliry = () => {
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -11,6 +13,9 @@ const Inquliry = () => {
   const [message, setMessage] = useState('');
   const [checking, setChecking] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const isMobile = useMediaQuery({
+    query: '(max-width:768px)',
+  });
 
   const opneModal = () => {
     setIsOpen(true);
@@ -26,17 +31,13 @@ const Inquliry = () => {
       zIndex: 3,
     },
     content: {
-      width: '100%',
-      maxWidth: '100.9rem',
+      width: isMobile ? '50%' : '100%',
+      maxWidth: isMobile ? 'none' : '100.9rem',
       height: '67.7rem',
       margin: 'auto',
       borderRadius: '3rem',
       boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
       padding: 0,
-      '@media (max-width: 768px)': {
-        width: '50%', // 화면 너비가 768px 이하일 때 width를 50%로 설정
-        maxWidth: 'none', // maxWidth를 none으로 설정하여 50%가 적용되도록 함
-      },
     },
   };
 

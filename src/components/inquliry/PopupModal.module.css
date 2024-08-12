@@ -81,3 +81,25 @@ li {
 .tabText2 {
   padding-left: 1rem;
 }
+
+@media screen and (max-width: 768px) {
+  .headerContainer {
+    width: 90%;
+  }
+  .textWrap > div {
+    font-size: 2.4rem;
+  }
+  .mainTextContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .textContent {
+    width: 90%;
+  }
+
+  .tabText {
+    padding-left: 0;
+  }
+}
