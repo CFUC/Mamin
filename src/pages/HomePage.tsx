@@ -23,7 +23,7 @@ const HomePage = () => {
       <AdList />
       <AdProcess />
       <Inquliry />
-      {/* <MapCom /> */}
+      <MapCom />
     </>
   );
 };
