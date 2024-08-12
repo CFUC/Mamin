@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 20rem;
+  max-width: 18rem;
 }
 
 .step {
@@ -31,7 +31,7 @@
   z-index: 4;
   background: transparent;
   border-radius: 50%;
-  border: 2px solid #38a770;
+  border: 0.2rem solid #38a770;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,15 +62,6 @@
   font-size: 2.8rem;
   font-weight: 500;
   text-align: center;
-}
-
-.hehe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
 }
 
 @media (max-width: 500px) {

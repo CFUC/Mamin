@@ -12,21 +12,6 @@ const AdProcessElement = ({
   id: number;
   size: number;
 }) => {
-  const [colorSize, setColorSize] = useState<number>(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      console.log(colorSize);
-      setColorSize(colorSize + size / 500);
-    }, 1);
-
-    setTimeout(() => {
-      setColorSize(size);
-
-      clearInterval(interval);
-    }, 500);
-  }, []);
-
   return (
     <div
       className={styles.container}
