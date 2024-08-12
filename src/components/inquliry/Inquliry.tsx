@@ -12,6 +12,7 @@ const Inquliry = () => {
   const [company, setCompany] = useState('');
   const [message, setMessage] = useState('');
   const [checking, setChecking] = useState(false);
+  const [file, setFile] =  useState<File | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useMediaQuery({
     query: '(max-width:768px)',
@@ -55,15 +56,15 @@ const Inquliry = () => {
     if (!checking) {
       return alert('개인정보 처리방침에 동의해주세요');
     }
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('phoneNumber', phoneNumber);
+    formData.append('email', email);
+    formData.append('company', company);
+    formData.append('message', message);
+    if(file) formData.append('file', file,encodeURIComponent(file.name));
 
-    axios
-      .post('/email/send', {
-        name,
-        phoneNumber,
-        email,
-        company,
-        message,
-      })
+    axios.post(`${process.env.REACT_APP_API_URL}/email/send`, formData)
       .then((res) => {
         alert('문의완료');
         setName('');
@@ -72,6 +73,7 @@ const Inquliry = () => {
         setCompany('');
         setMessage('');
         setChecking(false);
+        setFile(null);
       })
       .catch((err) => {
         if (err.response.status === 429) {
@@ -83,13 +85,12 @@ const Inquliry = () => {
   };
 
   const handleOnClickDownload = () => {
-  console.log(process.env.REACT_APP_API_URL);
   axios.get(`${process.env.REACT_APP_API_URL}/file/download`, {
     responseType: 'blob'
   })
   .then((res) => {
     const fileName = "캐시카플러스 서비스소개서(웹용).pdf";
-    const blob = new Blob([res.data], { type: 'application/pdf' }); // MIME 타입 설정
+    const blob = new Blob([res.data], { type: 'application/pdf' });
     const href = URL.createObjectURL(blob);
 
     const link = document.createElement('a');
@@ -105,6 +106,13 @@ const Inquliry = () => {
     console.error('파일 다운로드 중 오류 발생:', error);
   });
 };
+
+const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  if (e.target.files && e.target.files.length > 0) {
+    setFile(e.target.files[0]); 
+  }
+};
+
 
   return (
     <div className={styles.mainWrap} id="5">
@@ -127,9 +135,7 @@ const Inquliry = () => {
                 <div className={styles.downloadContentWrap}>
                   <div className={styles.downloadText}>
                     <div>
-                      <a href="/download/마케팅 민족 개발 보고서.pdf" download>
                         캐시카플러스 소개서 다운로드
-                      </a>
                     </div>
                   </div>
                   <div className={styles.downloadIcon}>
@@ -249,7 +255,7 @@ const Inquliry = () => {
                     <label>
                       <input
                         type="checkbox"
-                        defaultChecked={checking}
+                        checked={checking}
                         onClick={() => {
                           setChecking(!checking);
                         }}
@@ -280,7 +286,13 @@ const Inquliry = () => {
                         <div>파일첨부</div>
                       </div>
                     </label>
-                    <input type="file" className={styles.fileContent} />
+                    <input type="file" id='file' className={styles.fileContent} onChange={handleFileChange} />
+                    {
+                      file ?
+                     ` 첨부파일: ${file?.name}`
+                      :
+                      ''
+                    }
                   </div>
                   <input
                     type="submit"

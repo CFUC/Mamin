@@ -94,7 +94,7 @@
   align-items: center;
 }
 
-.downloadText > div > a {
+.downloadText > div {
   font-size: 2rem;
   font-weight: 600;
   color: #ffbb00;
@@ -382,6 +382,7 @@ input[type='checkbox']:checked + .checkboxIcon::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .fileContent {
@@ -397,6 +398,7 @@ input[type='checkbox']:checked + .checkboxIcon::after {
   color: #fff;
   font-size: 2.2rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1550px) {
