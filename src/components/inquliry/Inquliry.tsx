@@ -31,9 +31,9 @@ const Inquliry = () => {
       zIndex: 3,
     },
     content: {
-      width: isMobile ? "50%" : "100%",
+      width: isMobile ? "80%" : "100%",
       maxWidth: isMobile ? "none" : "100.9rem",
-      height: "67.7rem",
+      height: isMobile ? "70%" : "67.7rem",
       margin: "auto",
       borderRadius: "3rem",
       boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
