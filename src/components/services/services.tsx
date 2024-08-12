@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import styles from "./services.module.css";
 import { transformToNewStructure, transformToOriginalStructure } from "../../common/util";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 
@@ -25,7 +26,9 @@ export default function Services() {
       window.removeEventListener('resize', handlesizeChk);
     };
   }, []);
-
+  useEffect(() => {
+    AOS.init();
+  },[])
 
   return (
     <div className={styles.container} id="3">
