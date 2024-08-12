@@ -83,6 +83,7 @@
   border-radius: 0.5rem;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .downloadContentWrap {
@@ -93,7 +94,7 @@
   align-items: center;
 }
 
-.downloadText > div > a {
+.downloadText > div {
   font-size: 2rem;
   font-weight: 600;
   color: #ffbb00;
@@ -125,6 +126,13 @@
   width: 100%;
   height: 8.5rem;
   display: flex;
+}
+
+.maTextContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .maMainTextWrap {
@@ -381,6 +389,7 @@ input[type='checkbox']:checked + .checkboxIcon::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .fileContent {
@@ -396,6 +405,7 @@ input[type='checkbox']:checked + .checkboxIcon::after {
   color: #fff;
   font-size: 2.2rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1550px) {
@@ -468,6 +478,10 @@ input[type='checkbox']:checked + .checkboxIcon::after {
 }
 
 @media screen and (max-width: 768px) {
+  .mainWrap {
+    height: 100%;
+    padding: 2rem;
+  }
   .contentWrap {
     display: flex;
     flex-direction: column;
@@ -489,14 +503,19 @@ input[type='checkbox']:checked + .checkboxIcon::after {
     width: 100%;
     height: 100%;
   }
-  /* 
-  .maMainTextWrap {
+  .maTextWrap {
+    height: 5rem;
     justify-content: center;
+    align-items: center;
   }
 
-  .maSubTextWrap {
-    justify-content: center;
-  } */
+  .maTextContainer {
+    width: 45rem;
+  }
+
+  .maMainTextWrap {
+    align-items: center;
+  }
 
   .maMainTextContent > div {
     font-size: 1.6rem;
@@ -504,11 +523,6 @@ input[type='checkbox']:checked + .checkboxIcon::after {
 
   .maSubtextContent > div {
     font-size: 1rem;
-  }
-
-  .maTextWrap {
-    width: 100%;
-    padding: 1.5rem;
   }
 
   .inputWrap {
