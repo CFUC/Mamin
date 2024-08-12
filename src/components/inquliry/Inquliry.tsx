@@ -187,7 +187,13 @@ const Inquliry = () => {
                 <div className={styles.checboxContainer}>
                   <div className={styles.checkboxInputBox}>
                     <label>
-                      <input type="checkbox" />
+                      <input
+                        type="checkbox"
+                        defaultChecked={checking}
+                        onClick={() => {
+                          setChecking(!checking);
+                        }}
+                      />
                       <span className={styles.checkboxIcon}></span>
                       <span className={styles.checkboxText}>
                         개인정보 처리방침에 동의합니다.
