@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     if(location.pathname !== '/') return;
 
-    if (scroll >= 400) {
+    if (scroll >= 200) {
       setBlack(true);
     } else {
       setBlack(false);
