@@ -22,8 +22,8 @@ const HomePage = () => {
       <Portfolio />
       <AdList />
       <AdProcess />
-      <Inquliry />
-      {/* <MapCom /> */}
+      {/* <Inquliry /> */}
+      <MapCom />
     </>
   );
 };
