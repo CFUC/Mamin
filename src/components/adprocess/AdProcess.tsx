@@ -28,7 +28,7 @@ const adProcessData = [
   },
   {
     id: 5,
-    icon: "images/monitorShareIcon.svg",
+    icon: "images/charDocIcon.svg",
     title: "광고 결과\n보고서 제공",
     size: 360,
   },
@@ -38,7 +38,7 @@ const AdProcess = () => {
   return (
     <section className={styles.section}>
       <div className={styles.inner}>
-        <div className={styles.title}>마케팅 민족 광고절차</div>
+        <div className={styles.title}>광고절차</div>
         <div className={styles.processContainer}>
           {adProcessData.map((service, idx, arr) => (
             <>
