@@ -7,6 +7,7 @@ export default function Introduce() {
   useEffect(() => {
     AOS.init({
       duration: 1200,
+      once: true,
     });
   }, []);
   return (
