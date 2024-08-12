@@ -1,20 +1,20 @@
-import axios from 'axios';
-import styles from './Inquliry.module.css';
-import Modal from 'react-modal';
-import { useState } from 'react';
-import PopupModal from './PopupModal';
-import { useMediaQuery } from 'react-responsive';
+import axios from "axios";
+import styles from "./Inquliry.module.css";
+import Modal from "react-modal";
+import { useState } from "react";
+import PopupModal from "./PopupModal";
+import { useMediaQuery } from "react-responsive";
 
 const Inquliry = () => {
-  const [name, setName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [email, setEmail] = useState('');
-  const [company, setCompany] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [message, setMessage] = useState("");
   const [checking, setChecking] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useMediaQuery({
-    query: '(max-width:768px)',
+    query: "(max-width:768px)",
   });
 
   const opneModal = () => {
@@ -27,37 +27,38 @@ const Inquliry = () => {
 
   const customStyles = {
     overlay: {
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
       zIndex: 3,
     },
     content: {
-      width: isMobile ? '50%' : '100%',
-      maxWidth: isMobile ? 'none' : '100.9rem',
-      height: '67.7rem',
-      margin: 'auto',
-      borderRadius: '3rem',
-      boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+      width: isMobile ? "50%" : "100%",
+      maxWidth: isMobile ? "none" : "100.9rem",
+      height: "67.7rem",
+      margin: "auto",
+      borderRadius: "3rem",
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
       padding: 0,
+      overflow: "hidden",
     },
   };
 
   const sendEmail = (e: any) => {
     e.preventDefault();
     if (!name) {
-      return alert('성함을 입력해주세요');
+      return alert("성함을 입력해주세요");
     }
     if (!phoneNumber) {
-      return alert('연락처를 입력해주세요');
+      return alert("연락처를 입력해주세요");
     }
     if (!email) {
-      return alert('이메일을 입력해주세요');
+      return alert("이메일을 입력해주세요");
     }
     if (!checking) {
-      return alert('개인정보 처리방침에 동의해주세요');
+      return alert("개인정보 처리방침에 동의해주세요");
     }
 
     axios
-      .post('/email/send', {
+      .post("/email/send", {
         name,
         phoneNumber,
         email,
@@ -65,20 +66,20 @@ const Inquliry = () => {
         message,
       })
       .then((res) => {
-        alert('문의완료');
-        setName('');
-        setPhoneNumber('');
-        setEmail('');
-        setCompany('');
-        setMessage('');
+        alert("문의완료");
+        setName("");
+        setPhoneNumber("");
+        setEmail("");
+        setCompany("");
+        setMessage("");
         setChecking(false);
       })
       .catch((err) => {
         if (err.response.status === 429) {
-          return alert('잠시후에 시도해주세요');
+          return alert("잠시후에 시도해주세요");
         }
 
-        return alert('서버에 문제가 발생하였습니다');
+        return alert("서버에 문제가 발생하였습니다");
       });
   };
 
