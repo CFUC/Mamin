@@ -8,7 +8,6 @@
   width: 100%;
   max-width: 134.3rem;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 .title {
@@ -27,8 +26,8 @@
 }
 
 .arrowIcon {
-  width: 3rem;
-  height: 3rem;
+  width: 2.7rem;
+  height: 2.7rem;
   margin-top: -2.5%;
 }
 

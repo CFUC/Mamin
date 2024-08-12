@@ -1,6 +1,10 @@
 import axios from 'axios';
 import styles from './Inquliry.module.css';
+import Modal from 'react-modal';
 import { useState } from 'react';
+import PopupModal from './PopupModal';
+import { useMediaQuery } from 'react-responsive';
+
 const Inquliry = () => {
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -8,6 +12,34 @@ const Inquliry = () => {
   const [company, setCompany] = useState('');
   const [message, setMessage] = useState('');
   const [checking, setChecking] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const isMobile = useMediaQuery({
+    query: '(max-width:768px)',
+  });
+
+  const opneModal = () => {
+    setIsOpen(true);
+  };
+
+  const closeMadal = () => {
+    setIsOpen(false);
+  };
+
+  const customStyles = {
+    overlay: {
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      zIndex: 3,
+    },
+    content: {
+      width: isMobile ? '50%' : '100%',
+      maxWidth: isMobile ? 'none' : '100.9rem',
+      height: '67.7rem',
+      margin: 'auto',
+      borderRadius: '3rem',
+      boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+      padding: 0,
+    },
+  };
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -94,7 +126,11 @@ const Inquliry = () => {
               <div className={styles.downloadWrap} onClick={handleOnClickDownload}>
                 <div className={styles.downloadContentWrap}>
                   <div className={styles.downloadText}>
-                    <div>캐시카플러스 소개서 다운로드</div>
+                    <div>
+                      <a href="/download/마케팅 민족 개발 보고서.pdf" download>
+                        캐시카플러스 소개서 다운로드
+                      </a>
+                    </div>
                   </div>
                   <div className={styles.downloadIcon}>
                     <img src="/images/downloadIcon.png" alt="download" />
@@ -225,17 +261,27 @@ const Inquliry = () => {
                     </label>
                   </div>
                   <div className={styles.checkboxSubTextBox}>
-                    <div>자세히 보기</div>
+                    <div onClick={opneModal}>자세히 보기</div>
+                    <Modal
+                      isOpen={isOpen}
+                      onRequestClose={closeMadal}
+                      style={customStyles}
+                    >
+                      <PopupModal onClose={closeMadal} />
+                    </Modal>
                   </div>
                 </div>
               </div>
               <div className={styles.submitWrap}>
                 <div className={styles.submitContentWrap}>
-                  <input
-                    type="submit"
-                    value="파일첨부"
-                    className={styles.submitContent}
-                  />
+                  <div>
+                    <label htmlFor="file">
+                      <div className={styles.uploadContent}>
+                        <div>파일첨부</div>
+                      </div>
+                    </label>
+                    <input type="file" className={styles.fileContent} />
+                  </div>
                   <input
                     type="submit"
                     value="문의하기"
