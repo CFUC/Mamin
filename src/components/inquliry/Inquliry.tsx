@@ -2,7 +2,7 @@ import axios from 'axios';
 import styles from './Inquliry.module.css';
 import { useState } from 'react';
 const Inquliry = () => {
-  const [name, setname] = useState('');
+  const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [email, setEmail] = useState('');
   const [company, setCompany] = useState('');
@@ -34,7 +34,7 @@ const Inquliry = () => {
       })
       .then((res) => {
         alert('문의완료');
-        setname('');
+        setName('');
         setPhoneNumber('');
         setEmail('');
         setCompany('');
@@ -53,66 +53,76 @@ const Inquliry = () => {
   return (
     <div className={styles.mainWrap} id="5">
       <div className={styles.contentWrap}>
-        <div className={styles.textWrap}>
-          <div className={styles.textBox}>
-            <div className={styles.mainText}>
-              <div className={styles.logo}>
+        <div className={styles.leftSection}>
+          <div className={styles.commentWrap}>
+            <div className={styles.logoCommentBox}>
+              <div className={styles.logoBox}>
                 <img src="/images/logo.svg" alt="logo" />
-                <div className={styles.logoSubText}>
-                  <div>과 함께</div>
+              </div>
+              <div className={styles.logoCommentTextBox}>
+                <div>과 함께</div>
+              </div>
+            </div>
+            <div className={styles.subCommentBox}>
+              <div>더 나은 미래를 준비해 보세요!</div>
+            </div>
+            <div className={styles.downloadCommentBox}>
+              <div className={styles.downloadWrap}>
+                <div className={styles.downloadContentWrap}>
+                  <div className={styles.downloadText}>
+                    <div>캐시카플러스 소개서 다운로드</div>
+                  </div>
+                  <div className={styles.downloadIcon}>
+                    <img src="/images/downloadIcon.png" alt="download" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div className={styles.subText}>더 나은 미래를 준비해 보세요!</div>
           </div>
         </div>
         <div className={styles.rightSection}>
-          <div className={styles.formWrap}>
-            <div className={styles.rightSectionTextWrap}>
-              <div className={styles.rightSectionBoxContainer}>
-                <div className={styles.rightSectionTextContainer}>
-                  <div className={styles.rightSectionTextContent}>
-                    마케팅 견적이 궁금하다면?
-                  </div>
+          <div className={styles.rigthSectionContentWrap}>
+            <div className={styles.maTextWrap}>
+              <div className={styles.maMainTextWrap}>
+                <div className={styles.maMainTextContent}>
+                  <div>마케팅 견적이 궁금하다면?</div>
                 </div>
-                <div className={styles.rightSectionSubTextContainer}>
-                  <div className={styles.rightSectionsubTextContent}>
+              </div>
+              <div className={styles.maSubTextWrap}>
+                <div className={styles.maSubtextContent}>
+                  <div>
                     <span>*</span>표시는 필수입력 항목입니다
                   </div>
                 </div>
               </div>
             </div>
-            <div className={styles.formBox}>
-              <form onSubmit={sendEmail}>
-                <div className={styles.inputWrap}>
-                  <div className={styles.inputContainer}>
-                    <div className={styles.inputTextWrap}>
-                      <div className={styles.inputTextContainer}>
-                        <label>
-                          <div className={styles.inputTextBox}>
-                            <div className={styles.inputText}>성함</div>
-                            <div className={styles.inputStar}>*</div>
-                          </div>
-                        </label>
+            <form onSubmit={sendEmail}>
+              <div className={styles.inputWrap}>
+                <div className={styles.inputContainer}>
+                  <div className={styles.inputLeftSectionWrap}>
+                    <div className={styles.inputNameContentWrap}>
+                      <div className={styles.lableBox}>
+                        <div>
+                          성함<span>*</span>
+                        </div>
+                      </div>
+                      <div className={styles.inputBox}>
                         <input
                           type="text"
                           value={name}
                           onChange={(e) => {
-                            setname(e.target.value);
+                            setName(e.target.value);
                           }}
                         />
                       </div>
                     </div>
-                  </div>
-                  <div className={styles.inputContainer}>
-                    <div className={styles.inputTextWrap}>
-                      <div className={styles.inputTextContainer}>
-                        <label>
-                          <div className={styles.inputTextBox}>
-                            <div className={styles.inputText}>연락처</div>
-                            <div className={styles.inputStar}>*</div>
-                          </div>
-                        </label>
+                    <div className={styles.inputTelContentWrap}>
+                      <div className={styles.lableBox}>
+                        <div>
+                          연락처<span>*</span>
+                        </div>
+                      </div>
+                      <div className={styles.inputBox}>
                         <input
                           type="text"
                           value={phoneNumber}
@@ -124,16 +134,15 @@ const Inquliry = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.inputWrap}>
-                  <div className={styles.inputContainer}>
-                    <div className={styles.inputTextWrap}>
-                      <div className={styles.inputTextContainer}>
-                        <label>
-                          <div className={styles.inputTextBox}>
-                            <div className={styles.inputText}>이메일</div>
-                            <div className={styles.inputStar}>*</div>
-                          </div>
-                        </label>
+                <div className={styles.inputContainer}>
+                  <div className={styles.inputRigthSectionWrap}>
+                    <div className={styles.inputEmailContentWrap}>
+                      <div className={styles.lableBox}>
+                        <div>
+                          이메일<span>*</span>
+                        </div>
+                      </div>
+                      <div className={styles.inputBox}>
                         <input
                           type="text"
                           value={email}
@@ -143,15 +152,11 @@ const Inquliry = () => {
                         />
                       </div>
                     </div>
-                  </div>
-                  <div className={styles.inputContainer}>
-                    <div className={styles.inputTextWrap}>
-                      <div className={styles.inputTextContainer}>
-                        <label>
-                          <div className={styles.inputTextBox}>
-                            <div className={styles.inputText}>회사명/직급</div>
-                          </div>
-                        </label>
+                    <div className={styles.inputCompanyContentWrap}>
+                      <div className={styles.lableBox}>
+                        <div>회사명/직급</div>
+                      </div>
+                      <div className={styles.inputBox}>
                         <input
                           type="text"
                           value={company}
@@ -163,43 +168,52 @@ const Inquliry = () => {
                     </div>
                   </div>
                 </div>
-                <div className={styles.textareaWrap}>
-                  <div className={styles.textareaContent}>
-                    <label>문의내용</label>
-                    <textarea
-                      name="Inquiry"
-                      value={message}
-                      onChange={(e) => {
-                        setMessage(e.target.value);
-                      }}
-                    />
-                  </div>
+              </div>
+              <div className={styles.textareaWrap}>
+                <div className={styles.textareaLableBox}>
+                  <div>문의내용</div>
                 </div>
-                <div className={styles.checkWrap}>
-                  <div className={styles.checkContent}>
-                    <label className={styles.checkLabel}>
-                      <input
-                        type="checkbox"
-                        defaultChecked={checking}
-                        onClick={() => {
-                          setChecking(!checking);
-                        }}
-                      />
-                      <span className={styles.checkIcon}></span>
-                      <span className={styles.checkMainText}>
+                <div className={styles.textareaBox}>
+                  <textarea
+                    name="Inquiry"
+                    value={message}
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
+                  />
+                </div>
+              </div>
+              <div className={styles.checkboxWrap}>
+                <div className={styles.checboxContainer}>
+                  <div className={styles.checkboxInputBox}>
+                    <label>
+                      <input type="checkbox" />
+                      <span className={styles.checkboxIcon}></span>
+                      <span className={styles.checkboxText}>
                         개인정보 처리방침에 동의합니다.
                       </span>
                     </label>
-                    <span>자세히 보기</span>
+                  </div>
+                  <div className={styles.checkboxSubTextBox}>
+                    <div>자세히 보기</div>
                   </div>
                 </div>
-                <div className={styles.submitWrap}>
-                  <div className={styles.submitBox}>
-                    <input type="submit" value="문의하기" />
-                  </div>
+              </div>
+              <div className={styles.submitWrap}>
+                <div className={styles.submitContentWrap}>
+                  <input
+                    type="submit"
+                    value="파일첨부"
+                    className={styles.submitContent}
+                  />
+                  <input
+                    type="submit"
+                    value="문의하기"
+                    className={styles.submitContent}
+                  />
                 </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
