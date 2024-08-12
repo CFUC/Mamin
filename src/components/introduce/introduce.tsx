@@ -7,64 +7,64 @@ import IntroduceItem from "./components/introduceItem";
 export default function Introduce() {
   const [item, setItem] = useState([
     {
-      img: 'images/introduce/homepage.svg',
+      img: 'images/introduce/BICI.svg',
       type: '디자인',
-      dep: '패키지 디자인'
+      dep: 'BI / CI 디자인'
     },
     {
        img: 'images/introduce/homepage.svg',
       type: '디자인',
-      dep: '패키지 디자인'
+      dep: '홈페이지 디자인'
     },
     {
-       img: 'images/introduce/homepage.svg',
+       img: 'images/introduce/hanging_banner.svg',
+      type: '디자인',
+      dep: '현수막 디자인'
+    },
+    {
+       img: 'images/introduce/poster.svg',
+      type: '디자인',
+      dep: '포스터 디자인'
+    },
+    {
+       img: 'images/introduce/brochure.svg',
+      type: '디자인',
+      dep: '브로슈어 디자인'
+    },
+    {
+       img: 'images/introduce/package.svg',
       type: '디자인',
       dep: '패키지 디자인'
     },
     {
-       img: 'images/introduce/homepage.svg',
+       img: 'images/introduce/default.svg',
       type: '디자인',
-      dep: '패키지 디자인'
+      dep: '기본 디자인'
     },
     {
-       img: 'images/introduce/homepage.svg',
+       img: 'images/introduce/default.svg',
       type: '디자인',
-      dep: '패키지 디자인'
+      dep: '기본 디자인'
     },
     {
-       img: 'images/introduce/homepage.svg',
+       img: 'images/introduce/default.svg',
       type: '디자인',
-      dep: '패키지 디자인'
+      dep: '기본 디자인'
     },
     {
-       img: 'images/introduce/homepage.svg',
+       img: 'images/introduce/default.svg',
       type: '디자인',
-      dep: '패키지 디자인'
+      dep: '기본 디자인'
     },
     {
-       img: 'images/introduce/homepage.svg',
+       img: 'images/introduce/default.svg',
       type: '디자인',
-      dep: '패키지 디자인'
+      dep: '기본 디자인'
     },
     {
-       img: 'images/introduce/homepage.svg',
+       img: 'images/introduce/default.svg',
       type: '디자인',
-      dep: '패키지 디자인'
-    },
-    {
-       img: 'images/introduce/homepage.svg',
-      type: '디자인',
-      dep: '패키지 디자인'
-    },
-    {
-       img: 'images/introduce/homepage.svg',
-      type: '디자인',
-      dep: '패키지 디자인'
-    },
-    {
-       img: 'images/introduce/homepage.svg',
-      type: '디자인',
-      dep: '패키지 디자인'
+      dep: '기본 디자인'
     }
   ]);
   const [swiperSize, setSwiperSize] = useState(6);
