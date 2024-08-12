@@ -1,10 +1,11 @@
 .container{
     width: 100%;
+    height: calc(100vh + 30px);
     padding-top: 6vh;
 }
 
 .itemContainer{
-    width: 60%;
+    width: 100%;
     height: 80%;
     margin: 0 auto;
     display: flex;
@@ -13,24 +14,24 @@
 }
 
 .flexContainer{
-    width: 100%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .item {
     width: 30%; 
-    aspect-ratio: 0.8/1;
-    margin: 50px auto;
+    min-width: 288px;
+    aspect-ratio: 1/0.8;
+    margin: 0.5rem;
     padding: 3rem;
-    color: #000000;
-    -webkit-text-stroke-width: 0.1px;
-    -webkit-text-stroke-color: #000000;
+    padding-bottom: 0;
     box-sizing: border-box;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    
+    border-radius: 30px;
+    color: #FFFFFF;
 }
 
 .positionUp{
@@ -46,18 +47,19 @@
 .title{
     font-size: 4rem;
     font-weight: 600;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 5rem;
 }
 
 .titleMarketing{
-    font-size: 1.8rem;
+    word-break: keep-all;
+    font-size: 3.2rem;
     font-weight: 600;
 }
 
 .titleMarketingItem{
-    width: 90%;
+    width: 100%;
     font-size: 1.5rem;
     font-weight: 600;
     margin: 0 auto;
@@ -65,63 +67,72 @@
 }
 
 .depMarketingItem{
+    word-break: keep-all;
+    font-size: 1.8rem;
     margin-top: 0.5rem;
 }
 
+.depMarketingItem::marker{
+    font-size: 1rem;
+}
 
-@media screen and (max-width: 670px) {
-    .container{
-        height: 100vh;
+.MarketingImgContainer{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+
+}
+.MarketingImg{
+    width: 60%;
+    object-position: center;
+    object-fit: contain;
+}
+@media screen and (max-width: 810px) {
+    .item{
+        min-width: 250px;
     }
-    .itemContainer{
-        width: 100%;
+}
+
+@media screen and (max-width: 660px) {
+    .item{
+        min-width: 220px;
     }
+}
+
+@media screen and (max-width: 580px) {
     .title{
         width: 90%;
     }
     .item{
-        padding-top: 5rem;
-        margin: 30px auto;
+        min-width: 200px;
+        aspect-ratio: 1/0.8;
     }
-
-   
+    .depMarketingItem{
+        font-size: 1.5rem;
+    }
 }
 
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: 400px) {
     .flexContainer{
-        height: 40%;
+        width: 100%;
+    }
+    .item{
+        min-width: 48%;
+        aspect-ratio: 1/0.8;
     }
     
 }
-@media screen and (max-width: 375px) {
-    .flexContainer{
-        height: 45%;
-    }
-
-    .depMarketingItem{
-        font-size: 1.4rem;
-    }
-    
-}
-@media screen and (max-width: 370px){
-    .itemContainer{
-        align-content: center;
-    }
-    .flexContainer{
-        height: 35%;
-    }
-    .titleMarketing{
-        font-size: 1.4rem;
-    }
-    .depMarketingItem{
-        font-size: 1rem;
-    }
-
-}
 
 
-@media screen and (max-height: 800px) {
-    .titleMarketingItem{
-        margin-top: 1%;
+@media screen and (max-height: 750px) {
+    .container{
+        height: 130vh;
     }
+    .MarketingImgContainer{
+        height: 30%;
+    }
+
 }

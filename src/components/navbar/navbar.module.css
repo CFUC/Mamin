@@ -50,10 +50,11 @@
   margin-left: 5%;
   white-space: nowrap;
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   color: black;
   text-decoration: none;
 }
+
 .listContainer a label {
   white-space: nowrap;
   cursor: pointer;
@@ -61,36 +62,36 @@
 
 @media screen and (max-width: 590px) {
   .listContainer {
-    width: 30%;
+    width: 50%;
   }
-  .logo {
-    width: 12%;
-  }
-  .logoBlack {
-    width: 12%;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .logo {
-    width: 15%;
-  }
-  .logoBlack {
-    width: 15%;
-  }
-  .listContainer {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 330px) {
   .logo {
     width: 18%;
+  }
+  .logoBlack {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo {
+    width: 20%;
   }
   .logoBlack {
     width: 18%;
   }
   .listContainer {
-    width: 45%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .logo {
+    width: 25%;
+  }
+  .logoBlack {
+    width: 23%;
+  }
+  .listContainer {
+    width: 65%;
   }
 }
