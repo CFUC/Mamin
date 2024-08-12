@@ -50,6 +50,30 @@ const Inquliry = () => {
       });
   };
 
+  const handleOnClickDownload = () => {
+  console.log(process.env.REACT_APP_API_URL);
+  axios.get(`${process.env.REACT_APP_API_URL}/file/download`, {
+    responseType: 'blob'
+  })
+  .then((res) => {
+    const fileName = "캐시카플러스 서비스소개서(웹용).pdf";
+    const blob = new Blob([res.data], { type: 'application/pdf' }); // MIME 타입 설정
+    const href = URL.createObjectURL(blob);
+
+    const link = document.createElement('a');
+    link.href = href;
+    link.setAttribute('download', fileName);
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+    URL.revokeObjectURL(href);
+  })
+  .catch((error) => {
+    console.error('파일 다운로드 중 오류 발생:', error);
+  });
+};
+
   return (
     <div className={styles.mainWrap} id="5">
       <div className={styles.contentWrap}>
@@ -67,7 +91,7 @@ const Inquliry = () => {
               <div>더 나은 미래를 준비해 보세요!</div>
             </div>
             <div className={styles.downloadCommentBox}>
-              <div className={styles.downloadWrap}>
+              <div className={styles.downloadWrap} onClick={handleOnClickDownload}>
                 <div className={styles.downloadContentWrap}>
                   <div className={styles.downloadText}>
                     <div>캐시카플러스 소개서 다운로드</div>
