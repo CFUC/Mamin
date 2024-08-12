@@ -1,0 +1,83 @@
+.modalWrap {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 6.7rem;
+  border-radius: 3rem 3rem 0 0;
+  background-color: #38a770;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerContainer {
+  width: 90rem;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textWrap {
+  display: flex;
+  align-items: center;
+}
+
+.textWrap > div {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.closeIconWrap {
+  width: 2.9rem;
+  height: 2.9rem;
+}
+
+.closeIconWrap > img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.mainTextContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContent {
+  max-width: 100rem;
+  max-height: 64.8rem;
+  font-size: 2rem;
+}
+
+.titleContent {
+  font-weight: 600;
+}
+
+li {
+  list-style: none;
+}
+
+.textTitleContent {
+  font-weight: 600;
+  padding-bottom: 3rem;
+}
+
+.textContentSub {
+  padding-bottom: 3rem;
+}
+
+.tabText {
+  padding-left: 16.8rem;
+}
+
+.tabText2 {
+  padding-left: 1rem;
+}

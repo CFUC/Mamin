@@ -1,0 +1,22 @@
+/* MyModal.module.css */
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.modalContent {
+  width: 100%;
+  max-width: 100.9rem;
+  height: 67.7rem;
+  margin: auto;
+  border-radius: 3rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .modalContent {
+    width: 50%; /* 화면 너비가 768px 이하일 때 width를 50%로 설정 */
+    max-width: none; /* maxWidth를 none으로 설정하여 50%가 적용되도록 함 */
+  }
+}

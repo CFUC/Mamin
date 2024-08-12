@@ -93,10 +93,11 @@
   align-items: center;
 }
 
-.downloadText > div {
+.downloadText > div > a {
   font-size: 2rem;
   font-weight: 600;
   color: #ffbb00;
+  text-decoration: none;
 }
 
 .downloadIcon {
@@ -366,6 +367,24 @@ input[type='checkbox']:checked + .checkboxIcon::after {
   width: 23.6rem;
   display: flex;
   justify-content: space-between;
+}
+
+.uploadContent {
+  width: 10.8rem;
+  height: 3.3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #38a770;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileContent {
+  display: none;
 }
 
 .submitContent {
