@@ -7,15 +7,13 @@ type item = {
 export default function IntroduceItem(props:{item:item, style:boolean}){
   return(
     <div
-    className={styles.item}
+    className={`${styles.item} ${props.style ? styles.transBackgroundv1 : styles.transBackgroundv2}`}
     style={
         props.style ?
         {
-          backgroundColor: '#FFEDBD'
         }
         :
         {
-          backgroundColor: '#25CC79',
           top: '30px'
         }
     }
