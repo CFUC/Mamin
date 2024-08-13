@@ -92,7 +92,7 @@ const Inquliry = () => {
         responseType: "blob",
       })
       .then((res) => {
-        const fileName = "캐시카플러스 서비스소개서(웹용).pdf";
+        const fileName = "캐시카플러스 소개서.pdf";
         const blob = new Blob([res.data], { type: "application/pdf" });
         const href = URL.createObjectURL(blob);
 
