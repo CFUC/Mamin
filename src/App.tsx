@@ -6,6 +6,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Policy from "./pages/Policy";
 import { useEffect, useState } from "react";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const location = useLocation();
@@ -19,7 +20,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if(location.pathname !== '/') return;
+    if (location.pathname !== "/") return;
 
     if (scroll >= 100) {
       setBlack(true);
@@ -30,10 +31,11 @@ function App() {
   return (
     <>
       <MetaTag />
-      <Navbar black={black}/>
+      <Navbar black={black} />
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
-        <Route path="/policy" element={<Policy setBlack={setBlack}/>}></Route>
+        <Route path="/policy" element={<Policy setBlack={setBlack} />}></Route>
+        <Route path="/*" element={<NotFound />}></Route>
       </Routes>
       <Footer />
     </>
