@@ -190,15 +190,15 @@ const Inquliry = () => {
                     <div className={styles.inputTelContentWrap}>
                       <div className={styles.lableBox}>
                         <div>
-                          연락처<span>*</span>
+                          이메일<span>*</span>
                         </div>
                       </div>
                       <div className={styles.inputBox}>
                         <input
                           type="text"
-                          value={phoneNumber}
+                          value={email}
                           onChange={(e) => {
-                            setPhoneNumber(e.target.value);
+                            setEmail(e.target.value);
                           }}
                         />
                       </div>
@@ -210,15 +210,15 @@ const Inquliry = () => {
                     <div className={styles.inputEmailContentWrap}>
                       <div className={styles.lableBox}>
                         <div>
-                          이메일<span>*</span>
+                          연락처<span>*</span>
                         </div>
                       </div>
                       <div className={styles.inputBox}>
                         <input
                           type="text"
-                          value={email}
+                          value={phoneNumber}
                           onChange={(e) => {
-                            setEmail(e.target.value);
+                            setPhoneNumber(e.target.value);
                           }}
                         />
                       </div>
