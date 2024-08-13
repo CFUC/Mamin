@@ -8,52 +8,77 @@ const adData = [
   {
     id: 1,
     title: "세이브더칠드런",
-    image: "images/ad1.png",
+    image: "images/portfolio4.svg",
   },
   {
     id: 2,
     title: "초록우산 어린이재단",
-    image: "images/ad2.png",
+    image: "images/portfolio5.svg",
   },
   {
     id: 3,
     title: "밀알복지재단",
-    image: "images/ad3.png",
+    image: "images/ad3.svg",
   },
   {
     id: 4,
-    title: "대구대학교",
-    image: "images/ad4.png",
+    title: "아스트로젠",
+    image: "images/portfolio7.svg",
   },
   {
     id: 5,
-    title: "경북소프트웨어마이스터고등학교",
-    image: "images/ad5.png",
+    title: "TK벤처스",
+    image: "images/portfolio8.svg",
   },
   {
     id: 6,
-    title: "경북바이오마이스터고등학교",
-    image: "images/ad6.png",
+    title: "대구대학교",
+    image: "images/portfolio6.svg",
   },
   {
     id: 7,
-    title: "susoft",
-    image: "images/ad7.png",
+    title: "경북소프트웨어마이스터고등학교",
+    image: "images/portfolio1.svg",
   },
   {
     id: 8,
-    title: "phase",
-    image: "images/ad8.png",
+    title: "경북바이오마이스터고등학교",
+    image: "images/portfolio2.svg",
   },
   {
     id: 9,
-    title: "rocketry",
-    image: "images/ad9.png",
+    title: "Phase",
+    image: "images/portfolio3.svg",
   },
   {
     id: 10,
+    title: "윤쌤과학수학학원",
+    image: "images/portfolio11.png",
+  },
+  {
+    id: 11,
+    title: "롱남매",
+    image: "images/portfolio9.svg",
+  },
+  {
+    id: 12,
+    title: "sususoft",
+    image: "images/ad12.png",
+  },
+  {
+    id: 13,
+    title: "향산국어",
+    image: "images/ad13.svg",
+  },
+  {
+    id: 14,
+    title: "ROCKETRY",
+    image: "images/portfolio13.svg",
+  },
+  {
+    id: 15,
     title: "klapoo",
-    image: "images/ad10.png",
+    image: "images/portfolio15.svg",
   },
 ];
 
