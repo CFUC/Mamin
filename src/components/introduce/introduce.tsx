@@ -37,34 +37,39 @@ export default function Introduce() {
       dep: '패키지 디자인'
     },
     {
-       img: 'images/introduce/default.svg',
-      type: '디자인',
-      dep: '기본 디자인'
+       img: 'images/introduce/OOH.svg',
+      type: '마케팅',
+      dep: '옥외 광고'
     },
     {
-       img: 'images/introduce/default.svg',
-      type: '디자인',
-      dep: '기본 디자인'
+       img: 'images/introduce/cashcarplus.svg',
+      type: '마케팅',
+      dep: `<b style='color:#FF4D21'>★</b>개인차량(자가용) 광고`
     },
     {
-       img: 'images/introduce/default.svg',
-      type: '디자인',
-      dep: '기본 디자인'
+       img: 'images/introduce/transportation.svg',
+      type: '마케팅',
+      dep: '대중교통 광고'
     },
     {
-       img: 'images/introduce/default.svg',
-      type: '디자인',
-      dep: '기본 디자인'
+       img: 'images/introduce/google.svg',
+      type: '마케팅',
+      dep: '구글 광고'
     },
     {
-       img: 'images/introduce/default.svg',
-      type: '디자인',
-      dep: '기본 디자인'
+       img: 'images/introduce/naver.svg',
+      type: '마케팅',
+      dep: '네이버 광고'
     },
     {
-       img: 'images/introduce/default.svg',
-      type: '디자인',
-      dep: '기본 디자인'
+       img: 'images/introduce/meta.svg',
+      type: '마케팅',
+      dep: '메타 광고'
+    },
+    {
+      img: 'images/introduce/carrot.svg',
+     type: '마케팅',
+     dep: '당근 광고'
     }
   ]);
   const [swiperSize, setSwiperSize] = useState(6);
