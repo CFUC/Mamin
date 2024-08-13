@@ -28,7 +28,7 @@ const adProcessData = [
   },
   {
     id: 5,
-    icon: "images/charDocIcon.svg",
+    icon: "images/chartDocIcon.svg",
     title: "광고 결과\n보고서 제공",
     size: 360,
   },

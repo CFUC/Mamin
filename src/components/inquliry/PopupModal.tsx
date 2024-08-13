@@ -1,4 +1,4 @@
-import styles from './PopupModal.module.css';
+import styles from "./PopupModal.module.css";
 
 interface PopupModalProps {
   onClose: () => void;

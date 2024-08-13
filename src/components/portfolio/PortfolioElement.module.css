@@ -24,8 +24,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2.8rem;
   visibility: hidden;
+  padding: 2.5rem;
 }
 
 .container:hover .hoverDiv {
@@ -39,9 +39,16 @@
   object-fit: contain;
 }
 
+.ready {
+  padding: 0;
+}
+
+.ready .hoverImage {
+  object-fit: cover;
+}
+
 .image {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  max-height: 6.5rem;
 }

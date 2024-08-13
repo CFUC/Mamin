@@ -1,34 +1,35 @@
 import { useEffect, useState } from "react";
 import styles from "./services.module.css";
-import { transformToNewStructure, transformToOriginalStructure } from "../../common/util";
+import {
+  transformToNewStructure,
+  transformToOriginalStructure,
+} from "../../common/util";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
-
 export default function Services() {
-
   const [item, setItem] = useState(transformToOriginalStructure);
   const handlesizeChk = () => {
     const newWidth = window.innerWidth;
 
-    const newItem = newWidth < 960 
-      ? transformToNewStructure() 
-      : transformToOriginalStructure();
-      setItem(newItem);
+    const newItem =
+      newWidth < 960
+        ? transformToNewStructure()
+        : transformToOriginalStructure();
+    setItem(newItem);
   };
 
   useEffect(() => {
-    handlesizeChk()
-    window.addEventListener('resize', handlesizeChk);
-    
+    handlesizeChk();
+    window.addEventListener("resize", handlesizeChk);
+
     return () => {
-      window.removeEventListener('resize', handlesizeChk);
+      window.removeEventListener("resize", handlesizeChk);
     };
   }, []);
   useEffect(() => {
-    AOS.init();
-  },[])
+    AOS.init({ once: true });
+  }, []);
 
   return (
     <div className={styles.container} id="3">
@@ -37,11 +38,12 @@ export default function Services() {
         {item.map((it, idx) => (
           <div className={styles.flexContainer} key={idx}>
             {it.map((it, idx) => {
-              const position = idx + 1 === 1
-                ? styles.positionUp
-                : idx + 1 === 2
-                ? ""
-                : styles.positionDown;
+              const position =
+                idx + 1 === 1
+                  ? styles.positionUp
+                  : idx + 1 === 2
+                  ? ""
+                  : styles.positionDown;
 
               return (
                 <div
@@ -51,13 +53,22 @@ export default function Services() {
                   data-aos-delay={100 * idx}
                   key={idx}
                 >
-                  <p className={styles.titleMarketing} dangerouslySetInnerHTML={{ __html: it.title }}></p>
+                  <p
+                    className={styles.titleMarketing}
+                    dangerouslySetInnerHTML={{ __html: it.title }}
+                  ></p>
                   <ul className={styles.titleMarketingItem}>
-                    <li className={styles.depMarketingItem} dangerouslySetInnerHTML={{ __html: it.dep1 }}></li>
-                    <li className={styles.depMarketingItem} dangerouslySetInnerHTML={{ __html: it.dep2 }}></li>
+                    <li
+                      className={styles.depMarketingItem}
+                      dangerouslySetInnerHTML={{ __html: it.dep1 }}
+                    ></li>
+                    <li
+                      className={styles.depMarketingItem}
+                      dangerouslySetInnerHTML={{ __html: it.dep2 }}
+                    ></li>
                   </ul>
                   <div className={styles.MarketingImgContainer}>
-                    <img src={it.img} className={styles.MarketingImg}/>
+                    <img src={it.img} className={styles.MarketingImg} />
                   </div>
                 </div>
               );
