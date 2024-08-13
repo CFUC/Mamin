@@ -34,7 +34,7 @@ const Footer = () => {
           <div className={styles.ceoTelEmailWrap}>
             <div className={styles.ceoTelBox}>대표번호: 1522-3769</div>
             <div className={styles.ceoEmailBox}>
-              이메일: help@cashcarplus.com
+              이메일: marketingminjog@gmail.com
             </div>
           </div>
         </div>

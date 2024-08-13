@@ -43,7 +43,7 @@ const MapCom = () => {
                   </div>
                   <div className={styles.subTextContent}>
                     <div className={styles.subText}>
-                      <div>help@cashcarplus.com</div>
+                      <div>marketingminjog@gmail.com</div>
                     </div>
                   </div>
                 </div>
