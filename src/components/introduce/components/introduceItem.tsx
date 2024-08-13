@@ -27,7 +27,7 @@ export default function IntroduceItem(props:{item:item, style:boolean}){
       <div className={styles.itemTextContainer}>
         <div className={styles.itemText}>{props.item.type}</div>
         <div className={styles.itemText}>ㅡ</div>
-        <div className={styles.itemText}>{props.item.dep}</div>
+        <div className={styles.itemText} dangerouslySetInnerHTML={{__html: props.item.dep}}></div>
       </div>
     </div>
   )
