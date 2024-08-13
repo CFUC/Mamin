@@ -387,6 +387,7 @@ input[type='checkbox']:checked + .checkboxIcon::after {
 .filename {
   display: block;
   font-size: 2rem;
+  color: #FFFFFF;
 }
 
 .fileicon {

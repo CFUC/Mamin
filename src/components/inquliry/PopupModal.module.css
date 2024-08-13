@@ -58,10 +58,16 @@
   font-weight: 600;
 }
 
-li {
+.textTitleContent ul {
   list-style: none;
 }
 
+.textContentSub ul {
+  list-style: none;
+}
+.ul{
+  list-style: none;
+}
 .textTitleContent {
   font-weight: 600;
   padding-bottom: 3rem;

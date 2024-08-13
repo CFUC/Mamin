@@ -27,6 +27,7 @@ export default function Services() {
       window.removeEventListener("resize", handlesizeChk);
     };
   }, []);
+  
   useEffect(() => {
     AOS.init({ once: true });
   }, []);
