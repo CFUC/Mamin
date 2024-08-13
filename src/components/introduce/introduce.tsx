@@ -106,7 +106,7 @@ export default function Introduce() {
             마케팅의 새로운 표준을 제시하다! 아이디어를 현실로!
           </div>
           <div className={styles.subTitle}>
-          마케팅 민족은 온·오프라인을 아우르는 통합 마케팅(IMC) 전문 대행사입니다.<br/>
+          <label className={styles.point}>마케팅 민족은</label> 온·오프라인을 아우르는 통합 마케팅(IMC) 전문 대행사입니다.<br/>
           고객의 브랜드 가치를 극대화하기 위해 전략적이고 창의적인 마케팅 솔루션을 제공합니다. 디지털 마케팅부터 오프라인 광고까지, 다양한 채널을 통해 고객의 목표를 달성하도록 전략을 실행합니다.
           </div>
         </div>
