@@ -1,5 +1,5 @@
-import { useEffect } from "react";
-import styles from "./Policy.module.css";
+import { useEffect } from 'react';
+import styles from './Policy.module.css';
 
 const Policy = (props: {
   setBlack: React.Dispatch<React.SetStateAction<boolean>>;
@@ -251,12 +251,12 @@ const Policy = (props: {
               불량게시물의 판단기준은 다음과 같습니다.
               <ul>
                 <li>
-                  {" "}
+                  {' '}
                   - 다른 회원 또는 제3자에게 심한 모욕을 주거나 명예를 손상하는
                   내용인 경우
                 </li>
                 <li>
-                  {" "}
+                  {' '}
                   - 공공질서 및 미풍양속에 위반되는 내용을 유포하거나 링크
                   시키는 경우
                 </li>
@@ -264,7 +264,7 @@ const Policy = (props: {
                 <li> - 영리를 목적으로 하는 광고일 경우</li>
                 <li> - 범죄와 결부된다고 객관적으로 인정되는 내용일 경우</li>
                 <li>
-                  {" "}
+                  {' '}
                   - 다른 이용자 또는 제3자와 저작권 등 기타 권리를 침해하는 경우
                 </li>
                 <li> - 기타 관계 법령에 위배된다고 판단되는 경우</li>
@@ -394,7 +394,7 @@ const Policy = (props: {
         </p>
         <div id="collection">
           <div className={styles.listTitle}>
-            {"["}수집하는 개인정보의 항목{"]"}
+            {'['}수집하는 개인정보의 항목{']'}
           </div>
           <p>
             마케팅 민족은 회원가입, 광고 상담, 서비스 이용 등을 위해 아래와 같은
@@ -411,7 +411,7 @@ const Policy = (props: {
 
         <div id="purpose">
           <div className={styles.listTitle}>
-            {"["}개인정보 처리 목적{"]"}
+            {'['}개인정보 처리 목적{']'}
           </div>
           <p>마케팅 민족은 수집한 개인정보를 다음의 목적을 위해 활용합니다.</p>
           <ol>
@@ -437,7 +437,7 @@ const Policy = (props: {
 
         <div id="retention">
           <div className={styles.listTitle}>
-            {"["}개인정보 처리 및 보유 기간{"]"}
+            {'['}개인정보 처리 및 보유 기간{']'}
           </div>
           <p>
             원칙적으로 개인정보의 수집 또는 제공받은 목적 달성 시 지체 없이
@@ -451,7 +451,7 @@ const Policy = (props: {
 
         <div id="destruction">
           <div className={styles.listTitle}>
-            {"["}개인정보의 파기절차 및 파기방법{"]"}
+            {'['}개인정보의 파기절차 및 파기방법{']'}
           </div>
           <p>
             마케팅 민족은 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는
@@ -481,7 +481,7 @@ const Policy = (props: {
 
         <div id="rights">
           <div className={styles.listTitle}>
-            {"["}이용자 및 법정 대리인의 권리ㆍ의무 및 그 행사 방법{"]"}
+            {'['}이용자 및 법정 대리인의 권리ㆍ의무 및 그 행사 방법{']'}
           </div>
           <ul>
             <li>
@@ -516,7 +516,7 @@ const Policy = (props: {
 
         <div id="cookies">
           <div className={styles.listTitle}>
-            {"["}개인정보 자동수집 장치의 설치, 운영 및 거부{"]"}
+            {'['}개인정보 자동수집 장치의 설치, 운영 및 거부{']'}
           </div>
           <p>
             마케팅 민족은 귀하의 정보를 수시로 저장하고 찾아내는 '쿠키(cookie)'
@@ -527,7 +527,7 @@ const Policy = (props: {
           </p>
           <ul>
             <li>
-              - 쿠키 등 사용 목적{" "}
+              - 쿠키 등 사용 목적{' '}
               <div>
                 회원과 비회원의 접속 빈도나 방문 시간 등을 분석, 이용자의 취향과
                 관심분야를 파악 및 자취 추적 각종 이벤트 참여 정도 및 방문 회수
@@ -535,9 +535,9 @@ const Policy = (props: {
               </div>
             </li>
             <li>
-              - 쿠키 설정 거부 방법{" "}
+              - 쿠키 설정 거부 방법{' '}
               <div>
-                설정방법 예{")"} 웹 브라우저 상단의 도구 {">"} 인터넷 옵션 {">"}{" "}
+                설정방법 예{')'} 웹 브라우저 상단의 도구 {'>'} 인터넷 옵션 {'>'}{' '}
                 개인정보
               </div>
               <div>
@@ -550,7 +550,7 @@ const Policy = (props: {
 
         <div id="outsourcing">
           <div className={styles.listTitle}>
-            {"["}개인정보처리 위탁{"]"}
+            {'['}개인정보처리 위탁{']'}
           </div>
           <p>
             마케팅 민족은 원칙적으로 이용자 동의 없이 개인정보를 외부에 공개하지
@@ -592,7 +592,7 @@ const Policy = (props: {
 
         <div id="disclaimer">
           <div className={styles.listTitle}>
-            {"["}솔루션에 관한 면책조항{"]"}
+            {'['}솔루션에 관한 면책조항{']'}
           </div>
           <ol>
             <li>
@@ -614,7 +614,7 @@ const Policy = (props: {
 
         <div id="compensation">
           <div className={styles.listTitle}>
-            {"["}솔루션에 관한 손해배상{"]"}
+            {'['}솔루션에 관한 손해배상{']'}
           </div>
           <ol>
             <li>
@@ -642,7 +642,7 @@ const Policy = (props: {
 
         <div id="contact">
           <div className={styles.listTitle}>
-            {"["}개인정보 관리 책임자{"]"}
+            {'['}개인정보 관리 책임자{']'}
           </div>
           <p>
             마케팅 민족은 고객의 개인정보를 보호하고 개인정보와 관련한 불만을
@@ -656,8 +656,10 @@ const Policy = (props: {
             오후 6:00 까지)
           </p>
           <p>
-            이메일:{" "}
-            <a href="mailto:help@cashcarplus.com">help@cashcarplus.com</a>
+            이메일:{' '}
+            <a href="mailto:marketingminjog@gmail.com">
+              marketingminjog@gmail.com
+            </a>
           </p>
           <p>
             기타 개인정보침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에
@@ -666,22 +668,22 @@ const Policy = (props: {
           <ol>
             <li>
               개인분쟁조정위원회 (
-              <a href="http://www.1336.or.kr">www.1336.or.kr</a> /{" "}
+              <a href="http://www.1336.or.kr">www.1336.or.kr</a> /{' '}
               <a href="tel:1336">1336</a>)
             </li>
             <li>
               정보보호마크인증위원회 (
-              <a href="http://www.eprivacy.or.kr">www.eprivacy.or.kr</a> /{" "}
+              <a href="http://www.eprivacy.or.kr">www.eprivacy.or.kr</a> /{' '}
               <a href="tel:02-580-0533">02-580-0533~4</a>)
             </li>
             <li>
               대검찰청 인터넷범죄수사센터 (
-              <a href="http://icic.sppo.go.kr">http://icic.sppo.go.kr</a> /{" "}
+              <a href="http://icic.sppo.go.kr">http://icic.sppo.go.kr</a> /{' '}
               <a href="tel:02-3480-3600">02-3480-3600</a>)
             </li>
             <li>
               경찰청 사이버테러대응센터 (
-              <a href="http://www.ctrc.go.kr">www.ctrc.go.kr</a> /{" "}
+              <a href="http://www.ctrc.go.kr">www.ctrc.go.kr</a> /{' '}
               <a href="tel:02-392-0330">02-392-0330</a>)
             </li>
           </ol>
@@ -689,7 +691,7 @@ const Policy = (props: {
 
         <div id="amendments">
           <div className={styles.listTitle}>
-            {"["}개정 전 고지 의무{"]"}
+            {'['}개정 전 고지 의무{']'}
           </div>
           <p>
             본 개인정보처리방침의 내용 추가, 삭제 및 수정이 있을 경우 이용자가
