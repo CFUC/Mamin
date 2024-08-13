@@ -20,9 +20,10 @@
     word-break: keep-all;
     margin-top: 1%;
     font-size: 2rem;
+    font-weight: 550;
 }
 .itemContainer{
-    width: 100%;
+    width: 100%;    
     height: 50%;
 }
 .swiperContainer{
@@ -34,3 +35,6 @@
     height: 80%;
 }
 
+.point{
+    color:#38A770;
+}
