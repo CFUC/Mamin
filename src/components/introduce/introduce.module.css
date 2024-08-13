@@ -16,6 +16,7 @@
   font-weight: 800;
 }
 
+<<<<<<< HEAD
 .subTitle {
   word-break: keep-all;
   margin-top: 1%;
@@ -24,6 +25,17 @@
 .itemContainer {
   width: 100%;
   height: 50%;
+=======
+.subTitle{
+    word-break: keep-all;
+    margin-top: 1%;
+    font-size: 2rem;
+    font-weight: 550;
+}
+.itemContainer{
+    width: 100%;    
+    height: 50%;
+>>>>>>> cc23bb8a5c03fd0970ce1f76cd4991f9e97813be
 }
 .swiperContainer {
   width: 100%;
@@ -33,3 +45,10 @@
   width: 100%;
   height: 80%;
 }
+<<<<<<< HEAD
+=======
+
+.point{
+    color:#38A770;
+}
+>>>>>>> cc23bb8a5c03fd0970ce1f76cd4991f9e97813be
