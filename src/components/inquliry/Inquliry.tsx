@@ -1,21 +1,21 @@
-import axios from 'axios';
-import styles from './Inquliry.module.css';
-import Modal from 'react-modal';
-import { useState } from 'react';
-import PopupModal from './PopupModal';
-import { useMediaQuery } from 'react-responsive';
+import axios from "axios";
+import styles from "./Inquliry.module.css";
+import Modal from "react-modal";
+import { useState } from "react";
+import PopupModal from "./PopupModal";
+import { useMediaQuery } from "react-responsive";
 
 const Inquliry = () => {
-  const [name, setName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [email, setEmail] = useState('');
-  const [company, setCompany] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [company, setCompany] = useState("");
+  const [message, setMessage] = useState("");
   const [checking, setChecking] = useState(false);
   const [file, setFile] = useState<File | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const isMobile = useMediaQuery({
-    query: '(max-width:768px)',
+    query: "(max-width:768px)",
   });
 
   const opneModal = () => {
@@ -28,77 +28,77 @@ const Inquliry = () => {
 
   const customStyles = {
     overlay: {
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      backgroundColor: "rgba(0, 0, 0, 0.5)",
       zIndex: 3,
     },
     content: {
-      width: isMobile ? '80%' : '100%',
-      maxWidth: isMobile ? 'none' : '100.9rem',
-      height: isMobile ? '70%' : '67.7rem',
-      margin: 'auto',
-      borderRadius: '3rem',
-      boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+      width: isMobile ? "80%" : "100%",
+      maxWidth: isMobile ? "none" : "100.9rem",
+      height: isMobile ? "70%" : "67.7rem",
+      margin: "auto",
+      borderRadius: "3rem",
+      boxShadow: "0 2px 4px rgba(0, 0, 0, 0.2)",
       padding: 0,
-      overflow: 'hidden',
+      overflow: "hidden",
     },
   };
 
   const sendEmail = (e: any) => {
     e.preventDefault();
     if (!name) {
-      return alert('성함을 입력해주세요');
+      return alert("성함을 입력해주세요");
     }
     if (!phoneNumber) {
-      return alert('연락처를 입력해주세요');
+      return alert("연락처를 입력해주세요");
     }
     if (!email) {
-      return alert('이메일을 입력해주세요');
+      return alert("이메일을 입력해주세요");
     }
     if (!checking) {
-      return alert('개인정보 처리방침에 동의해주세요');
+      return alert("개인정보 처리방침에 동의해주세요");
     }
     const formData = new FormData();
-    formData.append('name', name);
-    formData.append('phoneNumber', phoneNumber);
-    formData.append('email', email);
-    formData.append('company', company);
-    formData.append('message', message);
-    if (file) formData.append('file', file, encodeURIComponent(file.name));
+    formData.append("name", name);
+    formData.append("phoneNumber", phoneNumber);
+    formData.append("email", email);
+    formData.append("company", company);
+    formData.append("message", message);
+    if (file) formData.append("file", file, encodeURIComponent(file.name));
 
     axios
       .post(`${process.env.REACT_APP_API_URL}/email/send`, formData)
       .then((res) => {
-        alert('문의완료');
-        setName('');
-        setPhoneNumber('');
-        setEmail('');
-        setCompany('');
-        setMessage('');
+        alert("문의완료");
+        setName("");
+        setPhoneNumber("");
+        setEmail("");
+        setCompany("");
+        setMessage("");
         setChecking(false);
         setFile(null);
       })
       .catch((err) => {
         if (err.response.status === 429) {
-          return alert('잠시후에 시도해주세요');
+          return alert("잠시후에 시도해주세요");
         }
 
-        return alert('서버에 문제가 발생하였습니다');
+        return alert("서버에 문제가 발생하였습니다");
       });
   };
 
   const handleOnClickDownload = () => {
     axios
       .get(`${process.env.REACT_APP_API_URL}/file/download`, {
-        responseType: 'blob',
+        responseType: "blob",
       })
       .then((res) => {
-        const fileName = '캐시카플러스 서비스소개서(웹용).pdf';
-        const blob = new Blob([res.data], { type: 'application/pdf' });
+        const fileName = "캐시카플러스 서비스소개서(웹용).pdf";
+        const blob = new Blob([res.data], { type: "application/pdf" });
         const href = URL.createObjectURL(blob);
 
-        const link = document.createElement('a');
+        const link = document.createElement("a");
         link.href = href;
-        link.setAttribute('download', fileName);
+        link.setAttribute("download", fileName);
         document.body.appendChild(link);
         link.click();
 
@@ -106,7 +106,7 @@ const Inquliry = () => {
         URL.revokeObjectURL(href);
       })
       .catch((error) => {
-        console.error('파일 다운로드 중 오류 발생:', error);
+        console.error("파일 다운로드 중 오류 발생:", error);
       });
   };
 
@@ -285,7 +285,11 @@ const Inquliry = () => {
               </div>
               <div className={styles.submitWrap}>
                 <div className={styles.submitContentWrap}>
-                  <div>
+                  <div className={styles.fileBtnContainer}>
+                    <div className={styles.fileicon}>{file ? "📁" : ""}</div>
+                    <div className={styles.filename}>
+                      {file ? `첨부파일: ${file?.name}` : ""}
+                    </div>
                     <label htmlFor="file">
                       <div className={styles.uploadContent}>
                         <div>파일첨부</div>
@@ -297,7 +301,6 @@ const Inquliry = () => {
                       className={styles.fileContent}
                       onChange={handleFileChange}
                     />
-                    {file ? ` 첨부파일: ${file?.name}` : ''}
                   </div>
                   <input
                     type="submit"
