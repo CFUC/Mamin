@@ -78,11 +78,13 @@ const Inquliry = () => {
         setFile(null);
       })
       .catch((err) => {
+        if(!err.response){
+          return alert(err.message);
+        }
         if (err.response.status === 429) {
           return alert('잠시후에 시도해주세요');
         }
-
-        return alert('서버에 문제가 발생하였습니다');
+        return alert(err.response.data);
       });
   };
 
