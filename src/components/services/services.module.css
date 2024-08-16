@@ -89,6 +89,9 @@
     object-position: center;
     object-fit: contain;
 }
+.sizeUp{
+    width: 60%;
+}
 @media screen and (max-width: 810px) {
     .item{
         min-width: 250px;

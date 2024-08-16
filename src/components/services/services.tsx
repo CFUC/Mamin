@@ -69,7 +69,7 @@ export default function Services() {
                     ></li>
                   </ul>
                   <div className={styles.MarketingImgContainer}>
-                    <img src={it.img} className={styles.MarketingImg} />
+                    <img src={it.img} className={`${styles.MarketingImg} ${it.size ? styles.sizeUp : ''}`} />
                   </div>
                 </div>
               );

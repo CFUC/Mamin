@@ -4,4 +4,5 @@ export type ServiceItem = {
   dep2: string;
   img: string;
   backgroundColor: string;
+  size: boolean;
 };
