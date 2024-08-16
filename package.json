@@ -1,5 +1,4 @@
 {
-  "proxy": "http://119.205.220.129:8000",
   "name": "mamin",
   "version": "0.1.0",
   "private": true,
