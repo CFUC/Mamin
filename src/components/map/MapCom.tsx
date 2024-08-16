@@ -69,7 +69,9 @@ const MapCom = () => {
           </div>
         </div>
         <div className={styles.mapWrap}>
-          <div className={styles.mapBox}>{/* <KakaoMap /> */}</div>
+          <div className={styles.mapBox}>
+            <KakaoMap />
+          </div>
         </div>
       </div>
     </div>
