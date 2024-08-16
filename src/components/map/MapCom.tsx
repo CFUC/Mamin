@@ -1,5 +1,6 @@
 import styles from './MapCom.module.css';
 import KakaoMap from './KakaoMap';
+
 const MapCom = () => {
   return (
     <div className={styles.mainWrap}>
@@ -68,9 +69,7 @@ const MapCom = () => {
           </div>
         </div>
         <div className={styles.mapWrap}>
-          <div className={styles.mapBox}>
-            <KakaoMap />
-          </div>
+          <div className={styles.mapBox}>{/* <KakaoMap /> */}</div>
         </div>
       </div>
     </div>

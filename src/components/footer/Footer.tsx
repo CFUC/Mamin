@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
         <div className={styles.moreWrap}>
           <div className={styles.ceoNumWrap}>
-            <div className={styles.ceoNameBox}>대표이사:임미덥</div>
+            <div className={styles.ceoNameBox}>대표이사: 임미덥</div>
             <div className={styles.ceoNumBox}>사업자등록번호: 489-88-02233</div>
           </div>
           <div className={styles.addresWrap}>
