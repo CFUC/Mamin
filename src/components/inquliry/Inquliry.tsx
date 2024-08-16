@@ -121,13 +121,16 @@ const Inquliry = () => {
         URL.revokeObjectURL(href);
       })
       .catch((err) => {
-        if(!err.response){
+        if (!err.response) {
           return alert(err.message);
         }
         if (err.response.status === 429) {
-          return alert('잠시후에 시도해주세요');
+          return alert("잠시후에 시도해주세요");
         }
         return alert(err.response.data);
+      })
+      .finally(() => {
+        setIsLoading(false);
       });
   };
 
