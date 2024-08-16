@@ -626,7 +626,7 @@ input[type='checkbox']:checked + .checkboxIcon::after {
   }
 
   .checboxContainer {
-    width: 45rem;
+    width: 100%;
   }
 
   .submitWrap {
