@@ -27,14 +27,14 @@ export default function Services() {
       window.removeEventListener("resize", handlesizeChk);
     };
   }, []);
-  
+
   useEffect(() => {
     AOS.init({ once: true });
   }, []);
 
   return (
     <div className={styles.container} id="3">
-      <div className={styles.title}>마케팅 민족 서비스 영역</div>
+      <div className={styles.title}>서비스 영역</div>
       <div className={styles.itemContainer}>
         {item.map((it, idx) => (
           <div className={styles.flexContainer} key={idx}>
