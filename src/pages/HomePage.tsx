@@ -1,13 +1,14 @@
-import { useEffect } from 'react';
-import AdList from '../components/adlist/AdList';
-import AdProcess from '../components/adprocess/AdProcess';
-import Inquliry from '../components/inquliry/Inquliry';
-import Introduce from '../components/introduce/introduce';
-import Main from '../components/main/main';
-import MapCom from '../components/map/MapCom';
-import Portfolio from '../components/portfolio/Portfolio';
-import ServiceIntroduce from '../components/serviceIntroduce/ServiceIntroduce';
-import Services from '../components/services/services';
+import { useEffect } from "react";
+import AdList from "../components/adlist/AdList";
+import AdProcess from "../components/adprocess/AdProcess";
+import Inquliry from "../components/inquliry/Inquliry";
+import Introduce from "../components/introduce/introduce";
+import Main from "../components/main/main";
+import MapCom from "../components/map/MapCom";
+import Portfolio from "../components/portfolio/Portfolio";
+import ServiceIntroduce from "../components/serviceIntroduce/ServiceIntroduce";
+import Services from "../components/services/services";
+import Loading from "../components/loading/Loading";
 
 const HomePage = () => {
   useEffect(() => {
