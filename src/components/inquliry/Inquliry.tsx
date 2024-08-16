@@ -107,8 +107,14 @@ const Inquliry = () => {
         document.body.removeChild(link);
         URL.revokeObjectURL(href);
       })
-      .catch((error) => {
-        console.error('파일 다운로드 중 오류 발생:', error);
+      .catch((err) => {
+        if(!err.response){
+          return alert(err.message);
+        }
+        if (err.response.status === 429) {
+          return alert('잠시후에 시도해주세요');
+        }
+        return alert(err.response.data);
       });
   };
 
