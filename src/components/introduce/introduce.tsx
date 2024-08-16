@@ -114,16 +114,16 @@ export default function Introduce() {
           <Swiper
           className={styles.swiperContainer}
           slidesPerView={swiperSize}
-          // centeredSlides={true}
-          // loop={true}
-          // modules={[Autoplay]}
-          // autoplay={{
-          //   delay: 0,
-          //   disableOnInteraction: false,
-          // }}
-          // speed={3000}
-          // spaceBetween={30}
-          // grabCursor
+          centeredSlides={true}
+          loop={true}
+          modules={[Autoplay]}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          speed={3000}
+          spaceBetween={30}
+          grabCursor
           >
           {
             item.map((it,idx)=>{
