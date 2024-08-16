@@ -21,11 +21,14 @@
   object-fit: contain;
 }
 .itemTextContainer{
-  margin-top: 10px;
+  position: absolute;
+  bottom: 0;
+  margin: 2rem;
 }
 .itemText{
   margin: 0 10%;
   font-size: 1.9rem;
+  white-space: nowrap;
 }
 
 .transBackgroundv1{

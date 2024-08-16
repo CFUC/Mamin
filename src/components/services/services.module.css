@@ -80,11 +80,12 @@
     height: 45%;
     display: flex;
     justify-content: flex-end;
-    margin-top: 10px;
 
 }
 .MarketingImg{
-    width: 60%;
+    position: absolute;
+    bottom: 2rem;
+    width: 45%;
     object-position: center;
     object-fit: contain;
 }
