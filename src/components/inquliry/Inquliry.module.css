@@ -622,11 +622,11 @@ input[type='checkbox']:checked + .checkboxIcon::after {
 
   .checkboxWrap {
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .checboxContainer {
-    width: 45rem;
+    width: 100%;
   }
 
   .submitWrap {
