@@ -5,6 +5,7 @@ import { useState } from "react";
 import PopupModal from "./PopupModal";
 import { useMediaQuery } from "react-responsive";
 import Loading from "../loading/Loading";
+import { validateEmail } from "../../common/util";
 
 const Inquliry = () => {
   const [name, setName] = useState("");
@@ -53,17 +54,30 @@ const Inquliry = () => {
     setIsLoading(true);
 
     if (!name) {
+      setIsLoading(false);
       return alert("성함을 입력해주세요");
     }
+    if(name.length >= 2 && name.length <= 5) {
+      setIsLoading(false);
+      return alert("성함은 2~5자로 작성해주세요");
+    }
     if (!phoneNumber) {
+      setIsLoading(false);
       return alert("연락처를 입력해주세요");
     }
     if (!email) {
+      setIsLoading(false);
       return alert("이메일을 입력해주세요");
     }
+    if(!validateEmail(email)){
+      setIsLoading(false);
+      return alert('올바른 이메일을 입력해주세요');
+    }
     if (!checking) {
+      setIsLoading(false);
       return alert("개인정보 처리방침에 동의해주세요");
     }
+
     const formData = new FormData();
     formData.append("name", name);
     formData.append("phoneNumber", phoneNumber);
