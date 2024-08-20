@@ -60,7 +60,7 @@ const Inquliry = () => {
       return alert("성함을 입력해주세요");
     }
 
-    if (name.length < 2 && name.length > 5) {
+    if (name.length < 2 || name.length > 5) {
       setIsLoading(false);
       return alert("성함은 2~5자로 작성해주세요");
     }
